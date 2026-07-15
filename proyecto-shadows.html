@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadows: Shunned by Light — Bono Dipacce</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="logo"><span class="logo-mark"></span>Bono Dipacce</div>
+    <div class="navlinks">
+      <a href="index.html">Inicio</a>
+      <a href="proyectos.html">Otros proyectos</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="index.html#contacto">Contacto</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ===================== HERO DEL PROYECTO ===================== -->
+<section class="proj-hero">
+  <div class="wrap">
+    <div class="proj-kicker">Puzzle · Top-down · Pixel Art</div>
+    <h1 class="proj-title">Shadows:<br>Shunned by Light</h1>
+    <p class="proj-lead">Un puzzle top-down donde la luz puede matarte… o ayudarte. Jugás como <strong>Shawy</strong>, una pequeña criatura de sombra que intenta escapar de una instalación humana usando lógica y planificación. Y cada muerte, en vez de castigarte, te da una herramienta nueva.</p>
+    <div class="proj-cta">
+      <a href="https://lyed01.itch.io/shadows" target="_blank" rel="noopener" class="btn btn-fill">Jugar / Descargar en itch.io ↗</a>
+      <a href="https://github.com/Lyed01/Shadows" target="_blank" rel="noopener" class="btn btn-ghost">Ver código en GitHub ↗</a>
+    </div>
+
+    <!-- Barra de metadatos -->
+    <div class="proj-meta">
+      <div class="m"><div class="k">Mi rol</div><div class="v">Game Design + Programación</div></div>
+      <div class="m"><div class="k">Equipo</div><div class="v">Proyecto grupal</div></div>
+      <div class="m"><div class="k">Motor / Tech</div><div class="v">Unity · C#</div></div>
+      <div class="m"><div class="k">Género</div><div class="v">Puzzle</div></div>
+      <div class="m"><div class="k">Plataforma</div><div class="v">Windows</div></div>
+      <div class="m"><div class="k">Estado</div><div class="v">En desarrollo</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Portada grande -->
+<div class="wrap">
+  <div class="shot empty proj-cover" data-label="Poné acá el gif o captura principal del juego&#10;(img/shadows-cover.png · idealmente en movimiento)"></div>
+</div>
+
+<!-- ===================== CONCEPTO ===================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <span class="section-title">El concepto</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="prose">
+      <p>Shadows nació de una pregunta de diseño simple pero rica: <strong>¿y si el enemigo más obvio de una criatura de sombra —la luz— fuera también su recurso más útil?</strong></p>
+      <p>El jugador controla a Shawy, atrapado en una instalación humana. En cada nivel hay que <strong>bloquear, reflejar y redirigir la luz</strong> para abrir caminos y activar mecanismos. La misma luz que resuelve el puzzle es la que te mata si la tocás sin cuidado. Esa tensión —recurso y amenaza en el mismo objeto— es el corazón de cada nivel.</p>
+    </div>
+
+    <!-- Pilares de diseño -->
+    <div class="pillars">
+      <div class="pillar">
+        <div class="n">Pilar 01</div>
+        <h3>La luz es doble filo</h3>
+        <p>Cada haz sirve para avanzar y para matarte. El jugador nunca la elimina: aprende a convivir con ella y a usarla a su favor.</p>
+      </div>
+      <div class="pillar">
+        <div class="n">Pilar 02</div>
+        <h3>Morir es progresar</h3>
+        <p>La muerte no reinicia sin más: corrompe el piso y desbloquea casillas nuevas donde colocar ShadowBlocks. El fracaso construye la solución.</p>
+      </div>
+      <div class="pillar">
+        <div class="n">Pilar 03</div>
+        <h3>Lógica, no reflejos</h3>
+        <p>Es un puzzle de planificación. Ganás pensando la secuencia, no apretando rápido. Cada nivel es un pequeño teorema.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LA MECÁNICA ESTRELLA ===================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <span class="section-title">La decisión de diseño clave</span>
+      <span class="section-line"></span>
+    </div>
+
+    <div class="callout">
+      <p>"Tu muerte también es una herramienta: cada vez que morís, el piso se corrompe y desbloquea casillas nuevas donde podés colocar ShadowBlocks."</p>
+      <div class="who">— Mecánica central de Shadows</div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3><span class="tag">El problema</span>Que morir no sea solo frustración</h3>
+        <p>En un puzzle, morir suele significar "volvé a empezar". Eso castiga al jugador y corta el ritmo. Quería que el error fuera <strong>información y progreso</strong>, no un muro.</p>
+      </div>
+      <div class="feature-media">
+        <div class="shot empty" data-label="Gif: el piso corrompiéndose al morir&#10;(img/shadows-corrupt.gif)"></div>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3><span class="tag">La solución</span>Convertir la muerte en construcción</h3>
+        <p>Cada muerte deja el terreno corrompido y habilita casillas donde el jugador coloca <strong>ShadowBlocks</strong> para bloquear o redirigir la luz. Así, un nivel imposible al primer intento se vuelve resoluble a medida que el jugador "invierte" muertes estratégicas. El fracaso se transforma en la mecánica de avance.</p>
+      </div>
+      <div class="feature-media">
+        <div class="shot empty" data-label="Gif: colocando ShadowBlocks para&#10;redirigir la luz (img/shadows-blocks.gif)"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESO / ITERACIÓN ===================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <span class="section-title">Proceso e iteración</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="prose">
+      <!-- ↓↓↓ ESTA ES LA SECCIÓN QUE MÁS SUMA. Contala con TUS palabras. ↓↓↓ -->
+      <p><strong>[Completá con tu experiencia real — esto es lo que más miran los evaluadores.]</strong> Contá algo que hayas probado y no funcionó, y cómo lo resolviste. Por ejemplo:</p>
+      <p>[¿Cómo prototipaste la mecánica de la luz? ¿Qué versión de los niveles descartaste y por qué? ¿Algún puzzle que testeaste con gente y tuviste que rediseñar porque nadie lo entendía? ¿Cómo balanceaste la dificultad de las muertes?]</p>
+      <p>Aunque sea en 3-4 frases honestas: <strong>problema que tuviste → qué intentaste → qué aprendiste</strong>. Eso demuestra que diseñás con intención.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALERÍA ===================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <span class="section-title">Galería</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="gallery">
+      <div class="shot empty" data-label="Captura de nivel (img/shadows-1.png)"></div>
+      <div class="shot empty" data-label="Captura de nivel (img/shadows-2.png)"></div>
+      <div class="shot empty" data-label="Mecanismo / puzzle (img/shadows-3.png)"></div>
+      <div class="shot empty" data-label="Shawy / personaje (img/shadows-4.png)"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TECH & CRÉDITOS ===================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num">05</span>
+      <span class="section-title">Tecnología y equipo</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="prose" style="margin-bottom:26px;">
+      <p>Desarrollado en <strong>Unity</strong> con <strong>C#</strong> como trabajo práctico final de la materia de Diseño de Videojuegos. Arte en pixel art. Sin uso de IA generativa.</p>
+    </div>
+    <div class="pills" style="margin-bottom:34px;">
+      <span class="pill">Unity</span>
+      <span class="pill">C#</span>
+      <span class="pill">Pixel Art</span>
+      <span class="pill">Puzzle Design</span>
+      <span class="pill">Singleplayer</span>
+    </div>
+
+    <div class="credits">
+      <div class="credit"><div class="role">Game Design + Programación</div><div class="name">Bono Dipacce</div></div>
+      <div class="credit"><div class="role">[Rol]</div><div class="name">[Compañero/a de equipo]</div></div>
+      <!-- [completá: sumá una tarjeta .credit por cada integrante del equipo y su rol] -->
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SIGUIENTE PROYECTO ===================== -->
+<section class="section">
+  <div class="wrap">
+    <a href="proyecto-templo-utaki.html" class="next-proj">
+      <div>
+        <div class="lbl">Siguiente proyecto →</div>
+        <div class="nm">Templo Utaki</div>
+      </div>
+      <span class="btn btn-ghost">Ver caso</span>
+    </a>
+    <a href="proyectos.html" class="backlink">← Volver a todos los proyectos</a>
+  </div>
+</section>
+
+<footer class="site-footer">© 2026 Bono Dipacce — hecho con ♥ en Argentina</footer>
+
+</body>
+</html>
