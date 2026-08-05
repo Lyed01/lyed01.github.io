@@ -56,7 +56,9 @@ nav.wrap{ display:flex; align-items:center; justify-content:space-between; heigh
   font-family: var(--font-display);
   font-weight: 700; font-size: 1.15rem; letter-spacing:-0.01em;
   display:flex; align-items:center; gap:9px;
+  transition: opacity .18s ease;
 }
+.logo:hover{ opacity: 0.78; }
 /* Corazón rojo en vez del típico puntito */
 .logo-mark{
   width: 14px; height:14px; flex:none;
@@ -320,6 +322,31 @@ footer.site-footer{
 .callout p{ font-family: var(--font-display); font-weight:600; font-size:1.15rem; color: var(--ink); letter-spacing:-0.01em; }
 .callout .who{ font-family: var(--font-mono); font-size:0.74rem; color: var(--ink-faint); margin-top:8px; }
 
+/* Iteraciones — qué se probó primero y en qué terminó */
+.iters{ display:flex; flex-direction:column; gap:2px; margin-top: 30px; }
+.iter{
+  background: var(--card); border:1px solid var(--line); padding: 24px 26px;
+  position:relative;
+}
+.iter:first-child{ border-radius: 14px 14px 0 0; }
+.iter:last-child{ border-radius: 0 0 14px 14px; }
+.iter .n{
+  font-family: var(--font-mono); font-size:0.7rem; color: var(--red);
+  text-transform:uppercase; letter-spacing:0.06em; font-weight:600;
+}
+.iter h3{ font-family: var(--font-display); font-weight:700; font-size:1.15rem; margin:9px 0 10px; letter-spacing:-0.01em; }
+.iter p{ color: var(--ink-soft); font-size:0.98rem; max-width: 74ch; }
+.iter p + p{ margin-top:10px; }
+.iter p strong{ color: var(--ink); font-weight:600; }
+/* De → a: el cambio concreto, en mono */
+.iter .swap{
+  font-family: var(--font-mono); font-size:0.76rem; color: var(--ink-faint);
+  margin-top:14px; display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+}
+.iter .swap b{ font-weight:500; color: var(--ink-soft); }
+.iter .swap .arrow{ color: var(--red); }
+@media (max-width:560px){ .iter{ padding:20px; } }
+
 /* Galería */
 .gallery{ display:grid; grid-template-columns: repeat(2,1fr); gap:16px; }
 @media (max-width:640px){ .gallery{ grid-template-columns:1fr; } }
@@ -338,3 +365,83 @@ footer.site-footer{
 .next-proj .nm{ font-family: var(--font-display); font-weight:700; font-size:1.5rem; letter-spacing:-0.01em; }
 
 @media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; scroll-behavior:auto !important; } }
+
+/* ============================================================
+   RESPONSIVE — ajustes para tablet y celular
+   ============================================================ */
+
+/* Nada debe empujar la pagina a lo ancho */
+img, video, iframe{ max-width:100%; }
+h1, h2, h3, p, li, .card-title, .proj-title{ overflow-wrap: break-word; }
+
+/* ---------- Tablet ---------- */
+@media (max-width: 900px){
+  .wrap{ padding: 0 26px; }
+  .hero{ padding: 72px 0 60px; }
+  .contact{ margin: 0 26px 64px; padding: 52px 34px; }
+  .proj-cover{ aspect-ratio: 16 / 9; margin-top: 32px; }
+}
+
+/* ---------- Celular ---------- */
+@media (max-width: 640px){
+  .wrap{ padding: 0 20px; }
+
+  /* El header pasa a dos filas: nombre arriba, navegacion abajo */
+  nav.wrap{ height:auto; flex-direction: column; align-items: flex-start; gap: 10px; padding-top: 14px; padding-bottom: 12px; }
+  .logo{ font-size: 1.05rem; white-space: nowrap; }
+  .navlinks{
+    width:100%; gap: 0; justify-content: space-between;
+    overflow-x: auto; scrollbar-width: none;
+  }
+  .navlinks::-webkit-scrollbar{ display:none; }
+  .navlinks a{ padding: 6px 0; white-space: nowrap; }
+
+  /* El resplandor del hero no debe generar scroll lateral */
+  .hero-glow{ left: 50%; width: 100%; max-width: 100%; height: 360px; top: -80px; }
+
+  .hero{ padding: 54px 0 46px; }
+  .hero-desc{ font-size: 1.02rem; }
+  .hero-cta{ margin-top: 30px; gap: 10px; }
+  .hero-cta .btn{ width:100%; justify-content:center; }
+
+  .section{ padding: 48px 0; }
+  .section-head{ gap: 12px; margin-bottom: 28px; }
+  .section-sub{ margin-top: -12px; margin-bottom: 28px; }
+
+  /* Metadatos del proyecto: dos columnas, mas compactos */
+  .proj-meta{ grid-template-columns: repeat(2, 1fr); margin-top: 30px; }
+  /* si el ultimo dato queda solo, que ocupe la fila entera */
+  .proj-meta .m:last-child:nth-child(odd){ grid-column: span 2; }
+  .proj-meta .m{ padding: 14px 16px; }
+  .proj-meta .m .v{ font-size: 0.94rem; }
+  .proj-hero{ padding: 22px 0 26px; }
+  .proj-lead{ font-size: 1.05rem; }
+  .proj-cta{ gap: 10px; }
+  .proj-cta .btn{ width:100%; justify-content:center; }
+  .proj-cover{ aspect-ratio: 16 / 10; }
+
+  .prose p, .iter p{ font-size: 1rem; }
+  .callout{ padding: 18px 20px; }
+  .callout p{ font-size: 1.05rem; }
+
+  /* Trayectoria: la fecha va arriba, no al costado */
+  .tl-item{ flex-direction: column; gap: 4px; }
+  .tl-when{ min-width: 0; }
+
+  .contact{ margin: 0 20px 56px; padding: 44px 22px; border-radius: 16px; }
+  .contact p{ margin-bottom: 24px; }
+  .contact-links{ flex-direction: column; align-items: stretch; }
+  .contact-links .btn{ justify-content:center; }
+
+  .next-proj .nm{ font-size: 1.25rem; }
+  .backlink{ margin-top: 28px; }
+}
+
+/* ---------- Celular chico ---------- */
+@media (max-width: 400px){
+  .wrap{ padding: 0 16px; }
+  .navlinks{ font-size: 0.68rem; }
+  .btn{ padding: 12px 16px; font-size: 0.75rem; }
+  .contact{ margin: 0 16px 48px; padding: 38px 18px; }
+  .contact-links .btn{ font-size: 0.72rem; padding: 12px 10px; }
+}

@@ -11,3 +11,7 @@ desktop.ini
 # Temporales
 *.tmp
 *.log
+
+# Material de trabajo interno — no va al sitio publico
+Documentacion Shadows/
+.playwright-mcp/
