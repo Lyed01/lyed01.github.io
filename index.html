@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bono Dipacce — Game Designer & Programador</title>
-<meta name="description" content="Portfolio de Bono Dipacce, game designer y programador de Argentina. Juegos hechos en Unity y C#: Shadows: Shunned by Light, Templo Utaki y Los Robots se Volvieron Locos.">
+<meta name="title-en" content="Bono Dipacce — Game Designer & Programmer">
+<meta name="description" content="Portfolio de Bono Dipacce, game designer y programador de Argentina. Juegos hechos en Unity y C#: Auralis, Shadows: Shunned by Light, Templo Utaki y Los Robots se Volvieron Locos.">
 <link rel="canonical" href="https://lyed01.github.io/">
 
 <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
@@ -15,6 +16,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Bono Dipacce — Portfolio">
 <meta property="og:locale" content="es_AR">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:title" content="Bono Dipacce — Game Designer & Programador">
 <meta property="og:description" content="Game designer y programador de Argentina. Busco crear experiencias con alma — juegos hechos en Unity y C#.">
 <meta property="og:url" content="https://lyed01.github.io/">
@@ -28,6 +30,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
 </head>
 <body>
 
@@ -35,24 +38,27 @@
   <nav class="wrap">
     <a href="index.html" class="logo"><span class="logo-mark"></span>Bono Dipacce</a>
     <div class="navlinks">
-      <a href="index.html" class="active">Inicio</a>
-      <a href="proyectos.html">Otros proyectos</a>
-      <a href="sobre-mi.html">Sobre mí</a>
-      <a href="#contacto">Contacto</a>
+      <a href="index.html" class="active"><span lang="es">Inicio</span><span lang="en">Home</span></a>
+      <a href="proyectos.html"><span lang="es">Otros proyectos</span><span lang="en">More projects</span></a>
+      <a href="sobre-mi.html"><span lang="es">Sobre mí</span><span lang="en">About</span></a>
+      <a href="#contacto"><span lang="es">Contacto</span><span lang="en">Contact</span></a>
+      <button class="lang-toggle" type="button" aria-label="Cambiar idioma / Change language"><span class="opt-es">ES</span><span class="sep">/</span><span class="opt-en">EN</span></button>
     </div>
   </nav>
 </header>
 
 <section class="hero">
   <div class="hero-glow"></div>
-  <span class="love-badge">hecho con <b>♥</b></span>
+  <span class="love-badge"><span lang="es">hecho con <b>♥</b></span><span lang="en">made with <b>♥</b></span></span>
   <div class="wrap">
     <div class="eyebrow">PORTFOLIO — 2026</div>
-    <h1 class="title">Busco crear<br>experiencias con <em>alma</em>.</h1>
-    <p class="hero-desc">Game designer y desarrollador de Argentina. Me importa menos la mecánica que lo que deja en quien juega — la sensación, el recorrido, el detalle. Del concepto al último pixel.</p>
+    <h1 class="title" lang="es">Busco crear<br>experiencias con <em>alma</em>.</h1>
+    <h1 class="title" lang="en">I try to make<br>experiences with <em>soul</em>.</h1>
+    <p class="hero-desc" lang="es">Game designer y desarrollador de Argentina. Me importa menos la mecánica que lo que deja en quien juega — la sensación, el recorrido, el detalle. Del concepto al último pixel.</p>
+    <p class="hero-desc" lang="en">Game designer and developer from Argentina. I care less about the mechanic itself than about what it leaves in whoever plays — the feeling, the journey, the details. From the first idea to the last pixel.</p>
     <div class="hero-cta">
-      <a href="#destacados" class="btn btn-fill">Ver proyectos destacados</a>
-      <a href="proyectos.html" class="btn btn-ghost">Ver todo el catálogo →</a>
+      <a href="#destacados" class="btn btn-fill"><span lang="es">Ver proyectos destacados</span><span lang="en">See featured projects</span></a>
+      <a href="proyectos.html" class="btn btn-ghost"><span lang="es">Ver todo el catálogo →</span><span lang="en">See the full catalog →</span></a>
     </div>
   </div>
 </section>
@@ -61,40 +67,44 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">01</span>
-      <span class="section-title">Proyectos destacados</span>
+      <span class="section-title"><span lang="es">Proyectos destacados</span><span lang="en">Featured projects</span></span>
       <span class="section-line"></span>
     </div>
-    <p class="section-sub">Algunos de los juegos en los que trabajé. El resto del catálogo está en <a href="proyectos.html" style="color:var(--red); text-decoration:underline;">Otros proyectos</a>.</p>
+    <p class="section-sub" lang="es">Algunos de los juegos en los que trabajé. El resto del catálogo está en <a href="proyectos.html" style="color:var(--red); text-decoration:underline;">Otros proyectos</a>.</p>
+    <p class="section-sub" lang="en">Some of the games I've worked on. The rest of the catalog is in <a href="proyectos.html" style="color:var(--red); text-decoration:underline;">More projects</a>.</p>
 
     <div class="grid">
 
-      <!-- PROYECTO DESTACADO 1 — SHADOWS -->
+      <!-- PROYECTO DESTACADO 1 — AURALIS -->
+      <a href="proyecto-auralis.html" class="card">
+        <div class="card-art art-2d has-img"><img src="img/auralis-cover.png" alt="Portada de Auralis" class="pixel"><span class="card-chip">Puzzle-platformer</span></div>
+        <div class="card-body">
+          <div class="card-title">Auralis</div>
+          <p class="card-desc" lang="es">Dos fragmentos de un mismo ser buscan volver a ser uno, y los movés a los dos con las mismas teclas. Hecho en equipo para la SANDA Game Jam 2026.</p>
+          <p class="card-desc" lang="en">Two fragments of the same being try to become one again, and you move both with the same keys. Made as a team for the SANDA Game Jam 2026.</p>
+          <div class="pills"><span class="pill">Unity</span><span class="pill">Game Jam</span><span class="pill">Pixel Art</span></div>
+        </div>
+      </a>
+
+      <!-- PROYECTO DESTACADO 2 — SHADOWS -->
       <a href="proyecto-shadows.html" class="card">
         <div class="card-art art-3d has-img"><img src="img/shadows-cover.gif" alt="Portada de Shadows" class="pixel"><span class="card-chip">Puzzle</span></div>
         <div class="card-body">
           <div class="card-title">Shadows: Shunned by Light</div>
-          <p class="card-desc">Puzzle top-down donde la luz te mata o te salva. Su idea central: morir corrompe el piso y te da nuevas herramientas. El fracaso construye la solución.</p>
+          <p class="card-desc" lang="es">Puzzle top-down donde la luz te mata o te salva. Su idea central: morir corrompe el piso y te da nuevas herramientas. El fracaso construye la solución.</p>
+          <p class="card-desc" lang="en">A top-down puzzle game where light either kills you or saves you. Its core idea: dying corrupts the floor and gives you new tools. Failure builds the solution.</p>
           <div class="pills"><span class="pill">C#</span><span class="pill">Pixel Art</span><span class="pill">Puzzle</span></div>
         </div>
       </a>
 
-      <!-- PROYECTO DESTACADO 2 — TEMPLO UTAKI -->
+      <!-- PROYECTO DESTACADO 3 — TEMPLO UTAKI -->
       <a href="proyecto-templo-utaki.html" class="card">
-        <div class="card-art art-2d has-img"><img src="img/utaki-cover.png" alt="Portada de Templo Utaki"><span class="card-chip">Plataformas</span></div>
+        <div class="card-art art-2d has-img"><img src="img/utaki-cover.png" alt="Portada de Templo Utaki"><span class="card-chip"><span lang="es">Plataformas</span><span lang="en">Platformer</span></span></div>
         <div class="card-body">
           <div class="card-title">Templo Utaki</div>
-          <p class="card-desc">Platformer 2D de aventura: explorás un templo antiguo con un gancho de agarre que se vuelve tu mejor amigo. Cada salto, giro y suelta importa.</p>
-          <div class="pills"><span class="pill">Pixel Art</span><span class="pill">Plataformas</span><span class="pill">Gancho</span></div>
-        </div>
-      </a>
-
-      <!-- PROYECTO DESTACADO 3 — LOS ROBOTS -->
-      <a href="proyecto-robots.html" class="card">
-        <div class="card-art art-code has-img"><img src="img/robots-cover.png" alt="Portada de Los Robots se Volvieron Locos y Atacan el Reino"><span class="card-chip">Tower Defense</span></div>
-        <div class="card-body">
-          <div class="card-title">Los Robots se Volvieron Locos y Atacan el Reino</div>
-          <p class="card-desc">Tower defense: defendé el castillo de oleadas de robots administrando torres, monedas y espacio. ¿Cuántas oleadas aguantás?</p>
-          <div class="pills"><span class="pill">Unity</span><span class="pill">Estrategia</span><span class="pill">Pixel Art</span></div>
+          <p class="card-desc" lang="es">Platformer 2D de aventura: explorás un templo antiguo con un gancho de agarre que se vuelve tu mejor amigo. Cada salto, giro y suelta importa.</p>
+          <p class="card-desc" lang="en">A 2D adventure platformer: you explore an ancient temple with a grappling hook that becomes your best friend. Every jump, swing and release matters.</p>
+          <div class="pills"><span class="pill">Pixel Art</span><span class="pill"><span lang="es">Plataformas</span><span lang="en">Platformer</span></span><span class="pill"><span lang="es">Gancho</span><span lang="en">Grappling hook</span></span></div>
         </div>
       </a>
 
@@ -106,14 +116,16 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">02</span>
-      <span class="section-title">Sobre mí, en breve</span>
+      <span class="section-title"><span lang="es">Sobre mí, en breve</span><span lang="en">About me, briefly</span></span>
       <span class="section-line"></span>
     </div>
     <div class="about-grid" style="grid-template-columns:1fr;">
       <div class="about-text">
-        <p>Soy <strong>Bono Dipacce</strong>, game designer y programador. Estudio diseño de videojuegos y me gusta trabajar en la frontera entre las dos disciplinas: pensar una mecánica <em>y</em> escribir el código que la hace real.</p>
-        <p>Lo que más me mueve es la <strong>creación de experiencias</strong>: cómo se siente jugar, qué emoción deja, el recorrido de quien juega. Las mecánicas son mi manera de llegar ahí, no el fin. Prefiero un juego chico y pulido antes que uno grande a medias.</p>
-        <a href="sobre-mi.html" class="btn btn-ghost" style="margin-top:6px;">Conocer más →</a>
+        <p lang="es">Soy <strong>Bono Dipacce</strong>, game designer y programador. Estudio diseño de videojuegos y me gusta trabajar en la frontera entre las dos disciplinas: pensar una mecánica <em>y</em> escribir el código que la hace real.</p>
+        <p lang="en">I'm <strong>Bono Dipacce</strong>, a game designer and programmer. I study game design and I like working on the border between both disciplines: thinking up a mechanic <em>and</em> writing the code that makes it real.</p>
+        <p lang="es">Lo que más me mueve es la <strong>creación de experiencias</strong>: cómo se siente jugar, qué emoción deja, el recorrido de quien juega. Las mecánicas son mi manera de llegar ahí, no el fin. Prefiero un juego chico y pulido antes que uno grande a medias.</p>
+        <p lang="en">What drives me most is <strong>creating experiences</strong>: how it feels to play, what emotion it leaves behind, the journey of whoever is playing. Mechanics are my way of getting there, not the goal. I'd rather make a small, polished game than a big, half-finished one.</p>
+        <a href="sobre-mi.html" class="btn btn-ghost" style="margin-top:6px;"><span lang="es">Conocer más →</span><span lang="en">Learn more →</span></a>
       </div>
     </div>
   </div>
@@ -121,8 +133,9 @@
 
 <section id="contacto">
   <div class="contact">
-    <h2>¿Hacemos algo juntos?</h2>
-    <p>Estoy abierto a colaboraciones, prácticas y oportunidades en game design y desarrollo. Si te gustó lo que viste, escribime.</p>
+    <h2><span lang="es">¿Hacemos algo juntos?</span><span lang="en">Shall we make something together?</span></h2>
+    <p lang="es">Estoy abierto a colaboraciones, prácticas y oportunidades en game design y desarrollo. Si te gustó lo que viste, escribime.</p>
+    <p lang="en">I'm open to collaborations, internships and opportunities in game design and development. If you liked what you saw, drop me a line.</p>
     <div class="contact-links">
       <a href="mailto:dipaccebono@gmail.com" class="btn btn-fill">dipaccebono@gmail.com</a>
       <a href="https://github.com/Lyed01" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
@@ -131,7 +144,7 @@
   </div>
 </section>
 
-<footer class="site-footer">© 2026 Bono Dipacce — hecho con ♥ en Argentina</footer>
+<footer class="site-footer"><span lang="es">© 2026 Bono Dipacce — hecho con ♥ en Argentina</span><span lang="en">© 2026 Bono Dipacce — made with ♥ in Argentina</span></footer>
 
 </body>
 </html>

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Los Robots se Volvieron Locos y Atacan el Reino — Bono Dipacce</title>
+<meta name="title-en" content="Los Robots se Volvieron Locos y Atacan el Reino — Bono Dipacce">
 <meta name="description" content="Tower defense hecho en Unity y C#: defendé el castillo de oleadas de robots administrando torres, monedas y espacio. Caso de diseño y desarrollo.">
 <link rel="canonical" href="https://lyed01.github.io/proyecto-robots.html">
 
@@ -15,6 +16,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Bono Dipacce — Portfolio">
 <meta property="og:locale" content="es_AR">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:title" content="Los Robots se Volvieron Locos y Atacan el Reino — Bono Dipacce">
 <meta property="og:description" content="Tower defense: defendé el castillo de oleadas de robots administrando torres, monedas y espacio. ¿Cuántas oleadas aguantás?">
 <meta property="og:url" content="https://lyed01.github.io/proyecto-robots.html">
@@ -28,6 +30,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
 </head>
 <body>
 
@@ -35,10 +38,11 @@
   <nav class="wrap">
     <a href="index.html" class="logo"><span class="logo-mark"></span>Bono Dipacce</a>
     <div class="navlinks">
-      <a href="index.html">Inicio</a>
-      <a href="proyectos.html">Otros proyectos</a>
-      <a href="sobre-mi.html">Sobre mí</a>
-      <a href="index.html#contacto">Contacto</a>
+      <a href="index.html"><span lang="es">Inicio</span><span lang="en">Home</span></a>
+      <a href="proyectos.html"><span lang="es">Otros proyectos</span><span lang="en">More projects</span></a>
+      <a href="sobre-mi.html"><span lang="es">Sobre mí</span><span lang="en">About</span></a>
+      <a href="index.html#contacto"><span lang="es">Contacto</span><span lang="en">Contact</span></a>
+      <button class="lang-toggle" type="button" aria-label="Cambiar idioma / Change language"><span class="opt-es">ES</span><span class="sep">/</span><span class="opt-en">EN</span></button>
     </div>
   </nav>
 </header>
@@ -46,21 +50,22 @@
 <!-- ===================== HERO DEL PROYECTO ===================== -->
 <section class="proj-hero">
   <div class="wrap">
-    <div class="proj-kicker">Tower Defense · Estrategia · Pixel Art</div>
+    <div class="proj-kicker"><span lang="es">Tower Defense · Estrategia · Pixel Art</span><span lang="en">Tower Defense · Strategy · Pixel Art</span></div>
     <h1 class="proj-title">Los Robots se Volvieron Locos<br>y Atacan el Reino</h1>
-    <p class="proj-lead">El castillo del reino está bajo el ataque de una horda de robots que avanza sin parar, oleada tras oleada. Defendelo colocando torres y administrando <strong>monedas y espacio</strong> en el mapa. La pregunta es simple: <strong>¿cuántas oleadas aguanta tu castillo?</strong></p>
+    <p class="proj-lead" lang="es">El castillo del reino está bajo el ataque de una horda de robots que avanza sin parar, oleada tras oleada. Defendelo colocando torres y administrando <strong>monedas y espacio</strong> en el mapa. La pregunta es simple: <strong>¿cuántas oleadas aguanta tu castillo?</strong></p>
+    <p class="proj-lead" lang="en"><em>The Robots Went Crazy and Attacked the Kingdom.</em> The kingdom's castle is under attack by a horde of robots that keeps coming, wave after wave. Defend it by placing towers and managing <strong>coins and space</strong> on the map. The question is simple: <strong>how many waves can your castle hold?</strong></p>
     <div class="proj-cta">
-      <a href="https://lyed01.itch.io/los-robots-se-volvieron-locos-y-atacan-el-reino" target="_blank" rel="noopener" class="btn btn-fill">Jugar / Descargar en itch.io ↗</a>
+      <a href="https://lyed01.itch.io/los-robots-se-volvieron-locos-y-atacan-el-reino" target="_blank" rel="noopener" class="btn btn-fill"><span lang="es">Jugar / Descargar en itch.io ↗</span><span lang="en">Play / Download on itch.io ↗</span></a>
     </div>
 
     <!-- Barra de metadatos -->
     <div class="proj-meta">
-      <div class="m"><div class="k">Mi rol</div><div class="v">Game Design + Programación</div></div>
-      <div class="m"><div class="k">Equipo</div><div class="v">Proyecto grupal</div></div>
-      <div class="m"><div class="k">Motor / Tech</div><div class="v">Unity · C#</div></div>
-      <div class="m"><div class="k">Género</div><div class="v">Tower Defense</div></div>
-      <div class="m"><div class="k">Plataforma</div><div class="v">Windows</div></div>
-      <div class="m"><div class="k">Estado</div><div class="v">En pausa</div></div>
+      <div class="m"><div class="k"><span lang="es">Mi rol</span><span lang="en">My role</span></div><div class="v"><span lang="es">Game Design + Programación</span><span lang="en">Game Design + Programming</span></div></div>
+      <div class="m"><div class="k"><span lang="es">Equipo</span><span lang="en">Team</span></div><div class="v"><span lang="es">Proyecto grupal</span><span lang="en">Team project</span></div></div>
+      <div class="m"><div class="k"><span lang="es">Motor / Tech</span><span lang="en">Engine / Tech</span></div><div class="v">Unity · C#</div></div>
+      <div class="m"><div class="k"><span lang="es">Género</span><span lang="en">Genre</span></div><div class="v">Tower Defense</div></div>
+      <div class="m"><div class="k"><span lang="es">Plataforma</span><span lang="en">Platform</span></div><div class="v">Windows</div></div>
+      <div class="m"><div class="k"><span lang="es">Estado</span><span lang="en">Status</span></div><div class="v"><span lang="es">En pausa</span><span lang="en">On hold</span></div></div>
     </div>
   </div>
 </section>
@@ -75,29 +80,33 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">01</span>
-      <span class="section-title">El concepto</span>
+      <span class="section-title"><span lang="es">El concepto</span><span lang="en">The concept</span></span>
       <span class="section-line"></span>
     </div>
     <div class="prose">
-      <p>Un <strong>tower defense</strong> directo en su promesa: aguantar. El jugador no persigue una meta lejana; sobrevive una oleada más, y otra, mientras el margen de error se achica. La idea fue sostener esa sensación de <strong>última línea de defensa</strong>.</p>
+      <p lang="es">Un <strong>tower defense</strong> directo en su promesa: aguantar. El jugador no persigue una meta lejana; sobrevive una oleada más, y otra, mientras el margen de error se achica. La idea fue sostener esa sensación de <strong>última línea de defensa</strong>.</p>
+      <p lang="en">A <strong>tower defense</strong> that's straightforward about its promise: hold on. The player isn't chasing a distant goal; they survive one more wave, and another, while the margin for error shrinks. The idea was to sustain that feeling of being the <strong>last line of defense</strong>.</p>
     </div>
 
     <!-- Pilares de diseño -->
     <div class="pillars">
       <div class="pillar">
-        <div class="n">Pilar 01</div>
-        <h3>Recursos que aprietan</h3>
-        <p>Monedas y espacio son limitados. Cada torre que colocás es una apuesta: gastás ahora o guardás para la oleada que viene.</p>
+        <div class="n"><span lang="es">Pilar 01</span><span lang="en">Pillar 01</span></div>
+        <h3><span lang="es">Recursos que aprietan</span><span lang="en">Tight resources</span></h3>
+        <p lang="es">Monedas y espacio son limitados. Cada torre que colocás es una apuesta: gastás ahora o guardás para la oleada que viene.</p>
+        <p lang="en">Coins and space are limited. Every tower you place is a bet: spend now or save for the next wave.</p>
       </div>
       <div class="pillar">
-        <div class="n">Pilar 02</div>
-        <h3>Tensión que escala</h3>
-        <p>Las oleadas suben de a poco. La dificultad no golpea de golpe: se acumula, hasta que cada decisión pesa.</p>
+        <div class="n"><span lang="es">Pilar 02</span><span lang="en">Pillar 02</span></div>
+        <h3><span lang="es">Tensión que escala</span><span lang="en">Escalating tension</span></h3>
+        <p lang="es">Las oleadas suben de a poco. La dificultad no golpea de golpe: se acumula, hasta que cada decisión pesa.</p>
+        <p lang="en">Waves ramp up gradually. The difficulty doesn't hit all at once: it builds up, until every decision matters.</p>
       </div>
       <div class="pillar">
-        <div class="n">Pilar 03</div>
-        <h3>El mapa como tablero</h3>
-        <p>Dónde ponés cada torre define si la horda pasa o no. Leer el recorrido y anticipar es la mitad del juego.</p>
+        <div class="n"><span lang="es">Pilar 03</span><span lang="en">Pillar 03</span></div>
+        <h3><span lang="es">El mapa como tablero</span><span lang="en">The map as a board</span></h3>
+        <p lang="es">Dónde ponés cada torre define si la horda pasa o no. Leer el recorrido y anticipar es la mitad del juego.</p>
+        <p lang="en">Where you place each tower decides whether the horde gets through. Reading the path and planning ahead is half the game.</p>
       </div>
     </div>
   </div>
@@ -108,7 +117,7 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">02</span>
-      <span class="section-title">Proceso e iteración</span>
+      <span class="section-title"><span lang="es">Proceso e iteración</span><span lang="en">Process and iteration</span></span>
       <span class="section-line"></span>
     </div>
     <div class="prose">
@@ -122,7 +131,7 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">03</span>
-      <span class="section-title">Galería</span>
+      <span class="section-title"><span lang="es">Galería</span><span lang="en">Gallery</span></span>
       <span class="section-line"></span>
     </div>
     <div class="gallery">
@@ -139,24 +148,25 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">04</span>
-      <span class="section-title">Tecnología y equipo</span>
+      <span class="section-title"><span lang="es">Tecnología y equipo</span><span lang="en">Tech and team</span></span>
       <span class="section-line"></span>
     </div>
     <div class="prose" style="margin-bottom:26px;">
-      <p>Tower defense desarrollado en <strong>Unity</strong> con <strong>C#</strong>. Sin uso de IA generativa.</p>
+      <p lang="es">Tower defense desarrollado en <strong>Unity</strong> con <strong>C#</strong>. Sin uso de IA generativa.</p>
+      <p lang="en">A tower defense developed in <strong>Unity</strong> with <strong>C#</strong>. No generative AI was used.</p>
     </div>
     <div class="pills" style="margin-bottom:34px;">
       <span class="pill">Unity</span>
       <span class="pill">C#</span>
       <span class="pill">Pixel Art</span>
       <span class="pill">Tower Defense</span>
-      <span class="pill">Estrategia</span>
+      <span class="pill"><span lang="es">Estrategia</span><span lang="en">Strategy</span></span>
     </div>
 
     <div class="credits">
-      <div class="credit"><div class="role">Game Design + Programación</div><div class="name">Bono Dipacce</div></div>
-      <div class="credit"><div class="role">Level Design + Arte</div><div class="name">Jesús Cergol</div></div>
-      <div class="credit"><div class="role">Arte</div><div class="name">Agustín Pereira</div></div>
+      <div class="credit"><div class="role"><span lang="es">Game Design + Programación</span><span lang="en">Game Design + Programming</span></div><div class="name">Bono Dipacce</div></div>
+      <div class="credit"><div class="role"><span lang="es">Level Design + Arte</span><span lang="en">Level Design + Art</span></div><div class="name">Jesús Cergol</div></div>
+      <div class="credit"><div class="role"><span lang="es">Arte</span><span lang="en">Art</span></div><div class="name">Agustín Pereira</div></div>
     </div>
   </div>
 </section>
@@ -164,18 +174,18 @@
 <!-- ===================== SIGUIENTE PROYECTO ===================== -->
 <section class="section">
   <div class="wrap">
-    <a href="proyecto-shadows.html" class="next-proj">
+    <a href="proyecto-auralis.html" class="next-proj">
       <div>
-        <div class="lbl">Siguiente proyecto →</div>
-        <div class="nm">Shadows: Shunned by Light</div>
+        <div class="lbl"><span lang="es">Siguiente proyecto →</span><span lang="en">Next project →</span></div>
+        <div class="nm">Auralis</div>
       </div>
-      <span class="btn btn-ghost">Ver caso</span>
+      <span class="btn btn-ghost"><span lang="es">Ver caso</span><span lang="en">View case</span></span>
     </a>
-    <a href="proyectos.html" class="backlink">← Volver a todos los proyectos</a>
+    <a href="proyectos.html" class="backlink"><span lang="es">← Volver a todos los proyectos</span><span lang="en">← Back to all projects</span></a>
   </div>
 </section>
 
-<footer class="site-footer">© 2026 Bono Dipacce — hecho con ♥ en Argentina</footer>
+<footer class="site-footer"><span lang="es">© 2026 Bono Dipacce — hecho con ♥ en Argentina</span><span lang="en">© 2026 Bono Dipacce — made with ♥ in Argentina</span></footer>
 
 </body>
 </html>

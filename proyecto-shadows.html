@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shadows: Shunned by Light — Bono Dipacce</title>
+<meta name="title-en" content="Shadows: Shunned by Light — Bono Dipacce">
 <meta name="description" content="Puzzle top-down hecho en Unity y C# donde la luz te mata o te salva, y cada muerte corrompe el piso para darte herramientas nuevas. Caso de diseño y desarrollo.">
 <link rel="canonical" href="https://lyed01.github.io/proyecto-shadows.html">
 
@@ -15,6 +16,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Bono Dipacce — Portfolio">
 <meta property="og:locale" content="es_AR">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:title" content="Shadows: Shunned by Light — Bono Dipacce">
 <meta property="og:description" content="Un puzzle top-down donde la luz puede matarte… o ayudarte. Cada muerte, en vez de castigarte, te da una herramienta nueva.">
 <meta property="og:url" content="https://lyed01.github.io/proyecto-shadows.html">
@@ -28,6 +30,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
 </head>
 <body>
 
@@ -35,10 +38,11 @@
   <nav class="wrap">
     <a href="index.html" class="logo"><span class="logo-mark"></span>Bono Dipacce</a>
     <div class="navlinks">
-      <a href="index.html">Inicio</a>
-      <a href="proyectos.html">Otros proyectos</a>
-      <a href="sobre-mi.html">Sobre mí</a>
-      <a href="index.html#contacto">Contacto</a>
+      <a href="index.html"><span lang="es">Inicio</span><span lang="en">Home</span></a>
+      <a href="proyectos.html"><span lang="es">Otros proyectos</span><span lang="en">More projects</span></a>
+      <a href="sobre-mi.html"><span lang="es">Sobre mí</span><span lang="en">About</span></a>
+      <a href="index.html#contacto"><span lang="es">Contacto</span><span lang="en">Contact</span></a>
+      <button class="lang-toggle" type="button" aria-label="Cambiar idioma / Change language"><span class="opt-es">ES</span><span class="sep">/</span><span class="opt-en">EN</span></button>
     </div>
   </nav>
 </header>
@@ -48,21 +52,22 @@
   <div class="wrap">
     <div class="proj-kicker">Puzzle · Top-down · Pixel Art</div>
     <h1 class="proj-title">Shadows:<br>Shunned by Light</h1>
-    <p class="proj-lead">Un puzzle top-down donde la luz puede matarte… o ayudarte. Jugás como <strong>Shawy</strong>, una pequeña criatura de sombra que intenta escapar de una instalación humana usando lógica y planificación. Y cada muerte, en vez de castigarte, te da una herramienta nueva.</p>
+    <p class="proj-lead" lang="es">Un puzzle top-down donde la luz puede matarte… o ayudarte. Jugás como <strong>Shawy</strong>, una pequeña criatura de sombra que intenta escapar de una instalación humana usando lógica y planificación. Y cada muerte, en vez de castigarte, te da una herramienta nueva.</p>
+    <p class="proj-lead" lang="en">A top-down puzzle game where light can kill you… or help you. You play as <strong>Shawy</strong>, a small shadow creature trying to escape a human facility through logic and planning. And every death, instead of punishing you, gives you a new tool.</p>
     <div class="proj-cta">
-      <a href="https://lyed01.itch.io/shadows" target="_blank" rel="noopener" class="btn btn-fill">Jugar / Descargar en itch.io ↗</a>
-      <a href="https://github.com/Lyed01/Shadows" target="_blank" rel="noopener" class="btn btn-ghost">Ver código en GitHub ↗</a>
+      <a href="https://lyed01.itch.io/shadows" target="_blank" rel="noopener" class="btn btn-fill"><span lang="es">Jugar / Descargar en itch.io ↗</span><span lang="en">Play / Download on itch.io ↗</span></a>
+      <a href="https://github.com/Lyed01/Shadows" target="_blank" rel="noopener" class="btn btn-ghost"><span lang="es">Ver código en GitHub ↗</span><span lang="en">View code on GitHub ↗</span></a>
     </div>
 
     <!-- Barra de metadatos -->
     <div class="proj-meta">
-      <div class="m"><div class="k">Mi rol</div><div class="v">Game Design + Programación</div></div>
-      <div class="m"><div class="k">Equipo</div><div class="v">3 personas</div></div>
-      <div class="m"><div class="k">Motor / Tech</div><div class="v">Unity · C#</div></div>
-      <div class="m"><div class="k">Género</div><div class="v">Puzzle</div></div>
-      <div class="m"><div class="k">Contenido</div><div class="v">25 niveles + hub</div></div>
-      <div class="m"><div class="k">Plataforma</div><div class="v">Windows</div></div>
-      <div class="m"><div class="k">Estado</div><div class="v">En desarrollo</div></div>
+      <div class="m"><div class="k"><span lang="es">Mi rol</span><span lang="en">My role</span></div><div class="v"><span lang="es">Game Design + Programación</span><span lang="en">Game Design + Programming</span></div></div>
+      <div class="m"><div class="k"><span lang="es">Equipo</span><span lang="en">Team</span></div><div class="v"><span lang="es">3 personas</span><span lang="en">3 people</span></div></div>
+      <div class="m"><div class="k"><span lang="es">Motor / Tech</span><span lang="en">Engine / Tech</span></div><div class="v">Unity · C#</div></div>
+      <div class="m"><div class="k"><span lang="es">Género</span><span lang="en">Genre</span></div><div class="v">Puzzle</div></div>
+      <div class="m"><div class="k"><span lang="es">Contenido</span><span lang="en">Content</span></div><div class="v"><span lang="es">25 niveles + hub</span><span lang="en">25 levels + hub</span></div></div>
+      <div class="m"><div class="k"><span lang="es">Plataforma</span><span lang="en">Platform</span></div><div class="v">Windows</div></div>
+      <div class="m"><div class="k"><span lang="es">Estado</span><span lang="en">Status</span></div><div class="v"><span lang="es">En desarrollo</span><span lang="en">In development</span></div></div>
     </div>
   </div>
 </section>
@@ -77,30 +82,35 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">01</span>
-      <span class="section-title">El concepto</span>
+      <span class="section-title"><span lang="es">El concepto</span><span lang="en">The concept</span></span>
       <span class="section-line"></span>
     </div>
     <div class="prose">
-      <p>Shadows arrancó de una pregunta simple: <strong>¿y si el enemigo más obvio de una criatura de sombra —la luz— fuera también su recurso más útil?</strong></p>
-      <p>El jugador controla a Shawy, que se escapó de su celda en un complejo humano de investigación y quiere volver al <strong>Abismo</strong>, su lugar de origen. En cada nivel hay que <strong>bloquear, reflejar y redirigir la luz</strong> para abrir caminos y activar mecanismos. La misma luz que resuelve el puzzle es la que te mata si la tocás sin cuidado. Esa tensión —recurso y amenaza en el mismo objeto— es el corazón de cada nivel.</p>
+      <p lang="es">Shadows arrancó de una pregunta simple: <strong>¿y si el enemigo más obvio de una criatura de sombra —la luz— fuera también su recurso más útil?</strong></p>
+      <p lang="en">Shadows started from a simple question: <strong>what if a shadow creature's most obvious enemy —light— were also its most useful resource?</strong></p>
+      <p lang="es">El jugador controla a Shawy, que se escapó de su celda en un complejo humano de investigación y quiere volver al <strong>Abismo</strong>, su lugar de origen. En cada nivel hay que <strong>bloquear, reflejar y redirigir la luz</strong> para abrir caminos y activar mecanismos. La misma luz que resuelve el puzzle es la que te mata si la tocás sin cuidado. Esa tensión —recurso y amenaza en el mismo objeto— es el corazón de cada nivel.</p>
+      <p lang="en">The player controls Shawy, who has escaped its cell in a human research complex and wants to return to the <strong>Abyss</strong>, where it came from. Each level asks you to <strong>block, reflect and redirect light</strong> to open paths and trigger mechanisms. The same light that solves the puzzle kills you if you touch it carelessly. That tension —resource and threat in the same object— is the heart of every level.</p>
     </div>
 
     <!-- Pilares de diseño -->
     <div class="pillars">
       <div class="pillar">
-        <div class="n">Pilar 01</div>
-        <h3>La luz es doble filo</h3>
-        <p>Cada haz sirve para avanzar y para matarte. El jugador nunca la elimina: aprende a convivir con ella y a usarla a su favor.</p>
+        <div class="n"><span lang="es">Pilar 01</span><span lang="en">Pillar 01</span></div>
+        <h3><span lang="es">La luz es doble filo</span><span lang="en">Light cuts both ways</span></h3>
+        <p lang="es">Cada haz sirve para avanzar y para matarte. El jugador nunca la elimina: aprende a convivir con ella y a usarla a su favor.</p>
+        <p lang="en">Every beam can help you move forward or kill you. The player never gets rid of it: they learn to live with it and use it in their favor.</p>
       </div>
       <div class="pillar">
-        <div class="n">Pilar 02</div>
-        <h3>Morir es progresar</h3>
-        <p>La muerte no reinicia sin más: corrompe el piso y desbloquea casillas nuevas donde colocar ShadowBlocks. El fracaso construye la solución.</p>
+        <div class="n"><span lang="es">Pilar 02</span><span lang="en">Pillar 02</span></div>
+        <h3><span lang="es">Morir es progresar</span><span lang="en">Dying is progress</span></h3>
+        <p lang="es">La muerte no reinicia sin más: corrompe el piso y desbloquea casillas nuevas donde colocar ShadowBlocks. El fracaso construye la solución.</p>
+        <p lang="en">Death doesn't just restart the level: it corrupts the floor and unlocks new tiles where you can place ShadowBlocks. Failure builds the solution.</p>
       </div>
       <div class="pillar">
-        <div class="n">Pilar 03</div>
-        <h3>Lógica, no reflejos</h3>
-        <p>Es un puzzle de planificación. Ganás pensando la secuencia, no apretando rápido. Cada nivel es un pequeño teorema.</p>
+        <div class="n"><span lang="es">Pilar 03</span><span lang="en">Pillar 03</span></div>
+        <h3><span lang="es">Lógica, no reflejos</span><span lang="en">Logic, not reflexes</span></h3>
+        <p lang="es">Es un puzzle de planificación. Ganás pensando la secuencia, no apretando rápido. Cada nivel es un pequeño teorema.</p>
+        <p lang="en">It's a planning puzzle. You win by thinking through the sequence, not by pressing fast. Every level is a small theorem.</p>
       </div>
     </div>
   </div>
@@ -111,19 +121,22 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">02</span>
-      <span class="section-title">Una decisión de diseño</span>
+      <span class="section-title"><span lang="es">Una decisión de diseño</span><span lang="en">A design decision</span></span>
       <span class="section-line"></span>
     </div>
 
     <div class="callout">
-      <p>"Tu muerte también es una herramienta: cada vez que morís, el piso se corrompe y desbloquea casillas nuevas donde podés colocar ShadowBlocks."</p>
-      <div class="who">— Mecánica central de Shadows</div>
+      <p lang="es">"Tu muerte también es una herramienta: cada vez que morís, el piso se corrompe y desbloquea casillas nuevas donde podés colocar ShadowBlocks."</p>
+      <p lang="en">"Your death is also a tool: every time you die, the floor gets corrupted and unlocks new tiles where you can place ShadowBlocks."</p>
+      <div class="who"><span lang="es">— Mecánica central de Shadows</span><span lang="en">— Shadows' core mechanic</span></div>
     </div>
 
     <div class="feature">
       <div class="feature-text">
-        <h3><span class="tag">El problema</span>Que morir no sea solo frustración</h3>
-        <p>En un puzzle, morir suele significar "volvé a empezar". Eso castiga al jugador y corta el ritmo. Buscábamos que el error fuera <strong>información y progreso</strong>, no un muro.</p>
+        <h3 lang="es"><span class="tag">El problema</span>Que morir no sea solo frustración</h3>
+        <h3 lang="en"><span class="tag">The problem</span>Making death more than frustration</h3>
+        <p lang="es">En un puzzle, morir suele significar "volvé a empezar". Eso castiga al jugador y corta el ritmo. Buscábamos que el error fuera <strong>información y progreso</strong>, no un muro.</p>
+        <p lang="en">In a puzzle game, dying usually means "start over". That punishes the player and breaks the rhythm. We wanted mistakes to be <strong>information and progress</strong>, not a wall.</p>
       </div>
       <div class="feature-media">
         <div class="shot"><img src="img/shadows-mech1.gif" alt="El piso corrompiéndose al morir" class="pixel"></div>
@@ -132,8 +145,10 @@
 
     <div class="feature">
       <div class="feature-text">
-        <h3><span class="tag">La solución</span>Convertir la muerte en construcción</h3>
-        <p>Cada muerte deja el terreno corrompido y habilita casillas donde el jugador coloca <strong>ShadowBlocks</strong> para bloquear o redirigir la luz. Así, un nivel imposible al primer intento se vuelve resoluble a medida que el jugador "invierte" muertes estratégicas. El fracaso se transforma en la mecánica de avance.</p>
+        <h3 lang="es"><span class="tag">La solución</span>Convertir la muerte en construcción</h3>
+        <h3 lang="en"><span class="tag">The solution</span>Turning death into building</h3>
+        <p lang="es">Cada muerte deja el terreno corrompido y habilita casillas donde el jugador coloca <strong>ShadowBlocks</strong> para bloquear o redirigir la luz. Así, un nivel imposible al primer intento se vuelve resoluble a medida que el jugador "invierte" muertes estratégicas. El fracaso se transforma en la mecánica de avance.</p>
+        <p lang="en">Every death leaves the ground corrupted and opens up tiles where the player places <strong>ShadowBlocks</strong> to block or redirect light. So a level that's impossible on the first try becomes solvable as the player "invests" strategic deaths. Failure becomes the way forward.</p>
       </div>
       <div class="feature-media">
         <div class="shot"><img src="img/shadows-mech2.gif" alt="Colocando ShadowBlocks para redirigir la luz" class="pixel"></div>
@@ -147,55 +162,68 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">03</span>
-      <span class="section-title">Proceso e iteración</span>
+      <span class="section-title"><span lang="es">Proceso e iteración</span><span lang="en">Process and iteration</span></span>
       <span class="section-line"></span>
     </div>
     <div class="prose">
-      <p>Casi nada salió bien al primer intento. Estas son las cuatro veces que tuvimos que volver atrás y rehacer algo que ya funcionaba, porque funcionar no alcanzaba: el jugador no lo entendía, o no lo disfrutaba.</p>
+      <p lang="es">Casi nada salió bien al primer intento. Estas son las cuatro veces que tuvimos que volver atrás y rehacer algo que ya funcionaba, porque funcionar no alcanzaba: el jugador no lo entendía, o no lo disfrutaba.</p>
+      <p lang="en">Almost nothing worked on the first try. These are the four times we had to go back and redo something that already worked, because working wasn't enough: the player didn't understand it, or didn't enjoy it.</p>
     </div>
 
     <div class="iters">
 
       <div class="iter">
-        <div class="n">Iteración 01 — La luz</div>
-        <h3>La luz tenía que sentirse como un objeto, no como una decoración</h3>
-        <p>Arrancamos con las luces que Unity trae hechas. Servían para iluminar, pero en Shadows la luz es lo que jugás: tenés que poder mirar un haz y saber en el acto hasta dónde llega, dónde termina la sombra y qué pasa si ponés un bloque en el medio. Con esas luces el jugador nunca terminaba de leer el espacio.</p>
-        <p>Terminé rehaciendo el sistema de luz entero para que se comportara como un objeto físico: choca contra las paredes, la sombra que proyecta un bloque es real y la podés usar como refugio. Recién ahí el nivel se volvió algo que se puede planificar mirando.</p>
-        <p>Ese cambio me habilitó una segunda luz: la <strong>roja</strong>, que no perdona —te destruye el bloque al instante—. Es la que convierte algunos niveles en una carrera y no en un problema tranquilo.</p>
-        <div class="swap"><b>luz que ilumina</b><span class="arrow">→</span><b>luz que se lee y se usa</b></div>
+        <div class="n"><span lang="es">Iteración 01 — La luz</span><span lang="en">Iteration 01 — The light</span></div>
+        <h3><span lang="es">La luz tenía que sentirse como un objeto, no como una decoración</span><span lang="en">Light had to feel like an object, not decoration</span></h3>
+        <p lang="es">Arrancamos con las luces que Unity trae hechas. Servían para iluminar, pero en Shadows la luz es lo que jugás: tenés que poder mirar un haz y saber en el acto hasta dónde llega, dónde termina la sombra y qué pasa si ponés un bloque en el medio. Con esas luces el jugador nunca terminaba de leer el espacio.</p>
+        <p lang="en">We started with Unity's built-in lights. They were fine for lighting things up, but in Shadows light is what you play with: you need to look at a beam and instantly know how far it reaches, where the shadow ends and what happens if you put a block in the way. With those lights, players never quite managed to read the space.</p>
+        <p lang="es">Terminé rehaciendo el sistema de luz entero para que se comportara como un objeto físico: choca contra las paredes, la sombra que proyecta un bloque es real y la podés usar como refugio. Recién ahí el nivel se volvió algo que se puede planificar mirando.</p>
+        <p lang="en">I ended up rebuilding the whole light system so it behaved like a physical object: it hits walls, the shadow a block casts is real, and you can use it as shelter. Only then did a level become something you can plan just by looking at it.</p>
+        <p lang="es">Ese cambio me habilitó una segunda luz: la <strong>roja</strong>, que no perdona —te destruye el bloque al instante—. Es la que convierte algunos niveles en una carrera y no en un problema tranquilo.</p>
+        <p lang="en">That change opened the door to a second light: the <strong>red</strong> one, which doesn't forgive —it destroys your block instantly. It's what turns some levels into a race instead of a calm problem.</p>
+        <div class="swap"><b lang="es">luz que ilumina</b><b lang="en">light that illuminates</b><span class="arrow">→</span><b lang="es">luz que se lee y se usa</b><b lang="en">light you can read and use</b></div>
       </div>
 
       <div class="iter">
-        <div class="n">Iteración 02 — El arte</div>
-        <h3>El juego no nació en pixel art</h3>
-        <p>A mitad del proyecto cambiamos todo el estilo visual a <strong>pixel art</strong>. El grueso del arte lo llevaron Jesús y Agustín; a mí me tocaron algunos tiles y los iconos de la interfaz, y me costaron bastante más de lo que imaginaba. Tenían que resolver dos cosas a la vez: que entiendas de un vistazo qué hace cada objeto, y que el lugar siga sintiéndose oscuro y opresivo. Los primeros intentos fueron un desastre y hubo que rehacerlos varias veces.</p>
-        <p>La prueba de que estaba bien era simple: si alguien que nunca jugó mira la pantalla y sabe qué lo va a matar, funciona.</p>
-        <div class="swap"><b>bonito pero confuso</b><span class="arrow">→</span><b>legible de un vistazo</b></div>
+        <div class="n"><span lang="es">Iteración 02 — El arte</span><span lang="en">Iteration 02 — The art</span></div>
+        <h3><span lang="es">El juego no nació en pixel art</span><span lang="en">The game wasn't born in pixel art</span></h3>
+        <p lang="es">A mitad del proyecto cambiamos todo el estilo visual a <strong>pixel art</strong>. El grueso del arte lo llevaron Jesús y Agustín; a mí me tocaron algunos tiles y los iconos de la interfaz, y me costaron bastante más de lo que imaginaba. Tenían que resolver dos cosas a la vez: que entiendas de un vistazo qué hace cada objeto, y que el lugar siga sintiéndose oscuro y opresivo. Los primeros intentos fueron un desastre y hubo que rehacerlos varias veces.</p>
+        <p lang="en">Halfway through the project we switched the whole visual style to <strong>pixel art</strong>. Jesús and Agustín handled most of the art; I did some tiles and the interface icons, and they were a lot harder than I expected. They had to do two things at once: let you understand at a glance what each object does, and keep the place feeling dark and oppressive. The first attempts were a mess and had to be redone several times.</p>
+        <p lang="es">La prueba de que estaba bien era simple: si alguien que nunca jugó mira la pantalla y sabe qué lo va a matar, funciona.</p>
+        <p lang="en">The test was simple: if someone who's never played looks at the screen and knows what's going to kill them, it works.</p>
+        <div class="swap"><b lang="es">bonito pero confuso</b><b lang="en">pretty but confusing</b><span class="arrow">→</span><b lang="es">legible de un vistazo</b><b lang="en">readable at a glance</b></div>
       </div>
 
       <div class="iter">
-        <div class="n">Iteración 03 — Las habilidades</div>
-        <h3>De una sola herramienta a un vocabulario</h3>
-        <p>Al principio el jugador tenía una sola cosa para hacer: poner un bloque que tapa la luz. Alcanzaba para unos cuantos niveles, pero se agotaba rápido.</p>
-        <p>Fui sumando herramientas que cambian la pregunta que te hace el nivel. El <strong>bloque reflectante</strong> te deja mandar la luz a otro lado en vez de apagarla, así que de golpe la luz también es tuya. La <strong>Llama del Abismo</strong> es una llama que manejás por separado, atraviesa lo que tu personaje no puede y corrompe el suelo donde se apaga: te deja preparar el terreno a distancia. Y el <strong>teletransporte</strong> corto rompe la idea de que sólo se avanza caminando.</p>
-        <p>Cada una entra con su propio nivel-tutorial y después se combinan. Ese es el arco real del juego: no que los puzzles se hagan más grandes, sino que tengas más formas de mirarlos.</p>
-        <div class="swap"><b>una herramienta</b><span class="arrow">→</span><b>cuatro que se combinan entre sí</b></div>
+        <div class="n"><span lang="es">Iteración 03 — Las habilidades</span><span lang="en">Iteration 03 — The abilities</span></div>
+        <h3><span lang="es">De una sola herramienta a un vocabulario</span><span lang="en">From a single tool to a vocabulary</span></h3>
+        <p lang="es">Al principio el jugador tenía una sola cosa para hacer: poner un bloque que tapa la luz. Alcanzaba para unos cuantos niveles, pero se agotaba rápido.</p>
+        <p lang="en">At first the player had only one thing to do: place a block that covers the light. It was enough for a handful of levels, but it wore out fast.</p>
+        <p lang="es">Fui sumando herramientas que cambian la pregunta que te hace el nivel. El <strong>bloque reflectante</strong> te deja mandar la luz a otro lado en vez de apagarla, así que de golpe la luz también es tuya. La <strong>Llama del Abismo</strong> es una llama que manejás por separado, atraviesa lo que tu personaje no puede y corrompe el suelo donde se apaga: te deja preparar el terreno a distancia. Y el <strong>teletransporte</strong> corto rompe la idea de que sólo se avanza caminando.</p>
+        <p lang="en">I kept adding tools that change the question each level asks you. The <strong>reflective block</strong> lets you send light somewhere else instead of blocking it, so suddenly the light is yours too. The <strong>Abyss Flame</strong> is a flame you control separately; it passes through what your character can't and corrupts the floor where it goes out, letting you prepare the ground from a distance. And the short <strong>teleport</strong> breaks the idea that walking is the only way forward.</p>
+        <p lang="es">Cada una entra con su propio nivel-tutorial y después se combinan. Ese es el arco real del juego: no que los puzzles se hagan más grandes, sino que tengas más formas de mirarlos.</p>
+        <p lang="en">Each one is introduced with its own tutorial level and then they start combining. That's the real arc of the game: not that puzzles get bigger, but that you have more ways of looking at them.</p>
+        <div class="swap"><b lang="es">una herramienta</b><b lang="en">one tool</b><span class="arrow">→</span><b lang="es">cuatro que se combinan entre sí</b><b lang="en">four that combine with each other</b></div>
       </div>
 
       <div class="iter">
-        <div class="n">Iteración 04 — Enseñar sin explicar</div>
-        <h3>Las reglas raras hay que mostrarlas, no escribirlas</h3>
-        <p>Shadows tiene reglas que nadie espera: que convenga morir, que la luz se pueda reflejar, que el piso donde moriste sea justamente donde después vas a construir. Puesto en un cartel, suena a instructivo y corta el clima.</p>
-        <p>Terminé poniendo <strong>NPCs que resuelven el nivel adelante tuyo</strong> y recién después te dan la habilidad. Aprendés mirando a otro hacerlo, que es como se aprende todo. Sumé también una previsualización al colocar bloques, porque en el playtesting se veía a la gente gastando bloques por no saber dónde iban a caer.</p>
-        <p>El playtesting que hicimos entre los tres fue el que marcó casi todos estos cambios: ahí se nota rápido qué se entiende solo y qué no.</p>
-        <div class="swap"><b>carteles de texto</b><span class="arrow">→</span><b>alguien que te lo muestra</b></div>
+        <div class="n"><span lang="es">Iteración 04 — Enseñar sin explicar</span><span lang="en">Iteration 04 — Teaching without explaining</span></div>
+        <h3><span lang="es">Las reglas raras hay que mostrarlas, no escribirlas</span><span lang="en">Strange rules should be shown, not written</span></h3>
+        <p lang="es">Shadows tiene reglas que nadie espera: que convenga morir, que la luz se pueda reflejar, que el piso donde moriste sea justamente donde después vas a construir. Puesto en un cartel, suena a instructivo y corta el clima.</p>
+        <p lang="en">Shadows has rules nobody expects: that dying can be worth it, that light can be reflected, that the floor where you died is exactly where you'll build later. Put on a sign, it reads like a manual and breaks the mood.</p>
+        <p lang="es">Terminé poniendo <strong>NPCs que resuelven el nivel adelante tuyo</strong> y recién después te dan la habilidad. Aprendés mirando a otro hacerlo, que es como se aprende todo. Sumé también una previsualización al colocar bloques, porque en el playtesting se veía a la gente gastando bloques por no saber dónde iban a caer.</p>
+        <p lang="en">I ended up adding <strong>NPCs that solve the level in front of you</strong> and only then give you the ability. You learn by watching someone else do it, which is how we learn everything. I also added a preview when placing blocks, because in playtesting we saw people wasting blocks without knowing where they'd land.</p>
+        <p lang="es">El playtesting que hicimos entre los tres fue el que marcó casi todos estos cambios: ahí se nota rápido qué se entiende solo y qué no.</p>
+        <p lang="en">The playtesting the three of us did drove almost all of these changes: that's where you quickly see what makes sense on its own and what doesn't.</p>
+        <div class="swap"><b lang="es">carteles de texto</b><b lang="en">text signs</b><span class="arrow">→</span><b lang="es">alguien que te lo muestra</b><b lang="en">someone who shows you</b></div>
       </div>
 
     </div>
 
     <div class="callout" style="margin-top:30px;">
-      <p>"Subestimé la carga horaria y dejé la producción de assets para la última etapa. La build de la beta salió menos pulida de lo que queríamos."</p>
-      <div class="who">— Lo que me llevo para el próximo proyecto</div>
+      <p lang="es">"Subestimé la carga horaria y dejé la producción de assets para la última etapa. La build de la beta salió menos pulida de lo que queríamos."</p>
+      <p lang="en">"I underestimated the workload and left asset production for the last stage. The beta build came out less polished than we wanted."</p>
+      <div class="who"><span lang="es">— Lo que me llevo para el próximo proyecto</span><span lang="en">— What I'm taking to the next project</span></div>
     </div>
   </div>
 </section>
@@ -205,7 +233,7 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">04</span>
-      <span class="section-title">Galería</span>
+      <span class="section-title"><span lang="es">Galería</span><span lang="en">Gallery</span></span>
       <span class="section-line"></span>
     </div>
     <div class="gallery">
@@ -220,12 +248,14 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">05</span>
-      <span class="section-title">Tecnología y equipo</span>
+      <span class="section-title"><span lang="es">Tecnología y equipo</span><span lang="en">Tech and team</span></span>
       <span class="section-line"></span>
     </div>
     <div class="prose" style="margin-bottom:26px;">
-      <p>Desarrollado en <strong>Unity</strong> con <strong>C#</strong> por un equipo de tres (<strong>HYN Interactive</strong>) para la materia de Diseño de Videojuegos, UADE. Arte en pixel art. Sin uso de IA generativa.</p>
-      <p>Nos repartimos el trabajo entre los tres: a mí me tocó sobre todo programar —el personaje, las luces, las habilidades y la interfaz—, mientras Jesús y Agustín se ocuparon del pixel art, las animaciones y buena parte de los niveles. Las mecánicas y el diseño de los niveles los fuimos discutiendo entre todos.</p>
+      <p lang="es">Desarrollado en <strong>Unity</strong> con <strong>C#</strong> por un equipo de tres (<strong>HYN Interactive</strong>) para la materia de Diseño de Videojuegos, UADE. Arte en pixel art. Sin uso de IA generativa.</p>
+      <p lang="en">Developed in <strong>Unity</strong> with <strong>C#</strong> by a team of three (<strong>HYN Interactive</strong>) for the Game Design course at UADE. Pixel art visuals. No generative AI was used.</p>
+      <p lang="es">Nos repartimos el trabajo entre los tres: a mí me tocó sobre todo programar —el personaje, las luces, las habilidades y la interfaz—, mientras Jesús y Agustín se ocuparon del pixel art, las animaciones y buena parte de los niveles. Las mecánicas y el diseño de los niveles los fuimos discutiendo entre todos.</p>
+      <p lang="en">We split the work among the three of us: I mostly handled programming —the character, the lights, the abilities and the interface— while Jesús and Agustín took care of the pixel art, the animations and a good part of the levels. We worked out the mechanics and level design together.</p>
     </div>
     <div class="pills" style="margin-bottom:34px;">
       <span class="pill">Unity</span>
@@ -237,9 +267,9 @@
     </div>
 
     <div class="credits">
-      <div class="credit"><div class="role">Game Design + Programación</div><div class="name">Bono Dipacce</div></div>
+      <div class="credit"><div class="role"><span lang="es">Game Design + Programación</span><span lang="en">Game Design + Programming</span></div><div class="name">Bono Dipacce</div></div>
       <div class="credit"><div class="role">Pixel Art + Level Design</div><div class="name">Jesús Cergol</div></div>
-      <div class="credit"><div class="role">Animación + UI + Level Design</div><div class="name">Agustín Pereira</div></div>
+      <div class="credit"><div class="role"><span lang="es">Animación + UI + Level Design</span><span lang="en">Animation + UI + Level Design</span></div><div class="name">Agustín Pereira</div></div>
     </div>
   </div>
 </section>
@@ -249,16 +279,16 @@
   <div class="wrap">
     <a href="proyecto-templo-utaki.html" class="next-proj">
       <div>
-        <div class="lbl">Siguiente proyecto →</div>
+        <div class="lbl"><span lang="es">Siguiente proyecto →</span><span lang="en">Next project →</span></div>
         <div class="nm">Templo Utaki</div>
       </div>
-      <span class="btn btn-ghost">Ver caso</span>
+      <span class="btn btn-ghost"><span lang="es">Ver caso</span><span lang="en">View case</span></span>
     </a>
-    <a href="proyectos.html" class="backlink">← Volver a todos los proyectos</a>
+    <a href="proyectos.html" class="backlink"><span lang="es">← Volver a todos los proyectos</span><span lang="en">← Back to all projects</span></a>
   </div>
 </section>
 
-<footer class="site-footer">© 2026 Bono Dipacce — hecho con ♥ en Argentina</footer>
+<footer class="site-footer"><span lang="es">© 2026 Bono Dipacce — hecho con ♥ en Argentina</span><span lang="en">© 2026 Bono Dipacce — made with ♥ in Argentina</span></footer>
 
 </body>
 </html>

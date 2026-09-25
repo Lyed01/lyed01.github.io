@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sobre mí — Bono Dipacce</title>
+<meta name="title-en" content="About — Bono Dipacce">
 <meta name="description" content="Quién soy: game designer y programador argentino, estudiante de Desarrollo de Videojuegos en UADE. Cómo trabajo y qué me interesa del diseño de juegos.">
 <link rel="canonical" href="https://lyed01.github.io/sobre-mi.html">
 
@@ -15,6 +16,7 @@
 <meta property="og:type" content="profile">
 <meta property="og:site_name" content="Bono Dipacce — Portfolio">
 <meta property="og:locale" content="es_AR">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:title" content="Sobre mí — Bono Dipacce">
 <meta property="og:description" content="Game designer y programador argentino, estudiante de Desarrollo de Videojuegos en UADE.">
 <meta property="og:url" content="https://lyed01.github.io/sobre-mi.html">
@@ -28,6 +30,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
 </head>
 <body>
 
@@ -35,10 +38,11 @@
   <nav class="wrap">
     <a href="index.html" class="logo"><span class="logo-mark"></span>Bono Dipacce</a>
     <div class="navlinks">
-      <a href="index.html">Inicio</a>
-      <a href="proyectos.html">Otros proyectos</a>
-      <a href="sobre-mi.html" class="active">Sobre mí</a>
-      <a href="index.html#contacto">Contacto</a>
+      <a href="index.html"><span lang="es">Inicio</span><span lang="en">Home</span></a>
+      <a href="proyectos.html"><span lang="es">Otros proyectos</span><span lang="en">More projects</span></a>
+      <a href="sobre-mi.html" class="active"><span lang="es">Sobre mí</span><span lang="en">About</span></a>
+      <a href="index.html#contacto"><span lang="es">Contacto</span><span lang="en">Contact</span></a>
+      <button class="lang-toggle" type="button" aria-label="Cambiar idioma / Change language"><span class="opt-es">ES</span><span class="sep">/</span><span class="opt-en">EN</span></button>
     </div>
   </nav>
 </header>
@@ -46,9 +50,10 @@
 <section class="hero" style="padding: 80px 0 50px;">
   <div class="hero-glow"></div>
   <div class="wrap">
-    <div class="eyebrow">QUIÉN SOY</div>
-    <h1 class="title" style="font-size: clamp(2rem, 5vw, 3.2rem);">Sobre <em>mí</em></h1>
-    <p class="hero-desc">Game designer y programador de Argentina. Diseño mecánicas y escribo el código que las hace jugables.</p>
+    <div class="eyebrow"><span lang="es">QUIÉN SOY</span><span lang="en">WHO I AM</span></div>
+    <h1 class="title" style="font-size: clamp(2rem, 5vw, 3.2rem);"><span lang="es">Sobre <em>mí</em></span><span lang="en">About <em>me</em></span></h1>
+    <p class="hero-desc" lang="es">Game designer y programador de Argentina. Diseño mecánicas y escribo el código que las hace jugables.</p>
+    <p class="hero-desc" lang="en">Game designer and programmer from Argentina. I design mechanics and write the code that makes them playable.</p>
   </div>
 </section>
 
@@ -61,15 +66,18 @@
     </div>
     <div class="about-grid">
       <div class="about-text">
-        <p>Soy <strong>Bono Dipacce</strong>. Estudio la <strong>Licenciatura en Desarrollo de Videojuegos en UADE</strong>, y antes completé una <strong>Tecnicatura en Desarrollo de Software</strong> de 3 años. Esa doble base me deja moverme cómodo entre el diseño y la programación: me gusta pensar una mecánica y también resolver cómo implementarla.</p>
-        <p>Lo que más me mueve es la <strong>creación de experiencias</strong> — cómo se siente un juego y qué le deja al jugador, más que la mecánica en sí. En Shadows, por ejemplo, la idea de que morir sirva para avanzar no nació de una regla: nació de querer que el error se sintiera parte del viaje y no un castigo.</p>
-        <p>A futuro busco sumarme a equipos donde pueda seguir creciendo como <strong>diseñador de experiencias con base técnica</strong>, y aportar tanto en la mesa de diseño como en el código.</p>
+        <p lang="es">Soy <strong>Bono Dipacce</strong>. Estudio la <strong>Licenciatura en Desarrollo de Videojuegos en UADE</strong>, y antes completé una <strong>Tecnicatura en Desarrollo de Software</strong> de 3 años. Esa doble base me deja moverme cómodo entre el diseño y la programación: me gusta pensar una mecánica y también resolver cómo implementarla.</p>
+        <p lang="en">I'm <strong>Bono Dipacce</strong>. I'm studying a <strong>Bachelor's in Video Game Development at UADE</strong>, and before that I completed a 3-year <strong>Software Development technical degree</strong>. That double background lets me move comfortably between design and programming: I like thinking up a mechanic and also figuring out how to build it.</p>
+        <p lang="es">Lo que más me mueve es la <strong>creación de experiencias</strong> — cómo se siente un juego y qué le deja al jugador, más que la mecánica en sí. En Shadows, por ejemplo, la idea de que morir sirva para avanzar no nació de una regla: nació de querer que el error se sintiera parte del viaje y no un castigo.</p>
+        <p lang="en">What drives me most is <strong>creating experiences</strong> — how a game feels and what it leaves in the player, more than the mechanic itself. In Shadows, for example, the idea that dying helps you move forward didn't come from a rule: it came from wanting mistakes to feel like part of the journey rather than a punishment.</p>
+        <p lang="es">A futuro busco sumarme a equipos donde pueda seguir creciendo como <strong>diseñador de experiencias con base técnica</strong>, y aportar tanto en la mesa de diseño como en el código.</p>
+        <p lang="en">Going forward, I'm looking to join teams where I can keep growing as an <strong>experience designer with a technical background</strong>, and contribute both at the design table and in the code.</p>
       </div>
       <div class="about-cards">
-        <div class="stat-card"><div class="k">Formación</div><div class="v">Lic. en Desarrollo de Videojuegos · UADE</div></div>
-        <div class="stat-card"><div class="k">Herramientas</div><div class="v">Unity · C# · C · Java · Kotlin</div></div>
-        <div class="stat-card"><div class="k">Idiomas</div><div class="v">Español · Inglés</div></div>
-        <div class="stat-card"><div class="k">Base</div><div class="v">Argentina</div></div>
+        <div class="stat-card"><div class="k"><span lang="es">Formación</span><span lang="en">Education</span></div><div class="v"><span lang="es">Lic. en Desarrollo de Videojuegos · UADE</span><span lang="en">B.A. in Video Game Development · UADE</span></div></div>
+        <div class="stat-card"><div class="k"><span lang="es">Herramientas</span><span lang="en">Tools</span></div><div class="v">Unity · C# · C · Java · Kotlin</div></div>
+        <div class="stat-card"><div class="k"><span lang="es">Idiomas</span><span lang="en">Languages</span></div><div class="v"><span lang="es">Español · Inglés</span><span lang="en">Spanish · English</span></div></div>
+        <div class="stat-card"><div class="k"><span lang="es">Base</span><span lang="en">Based in</span></div><div class="v">Argentina</div></div>
       </div>
     </div>
   </div>
@@ -87,37 +95,57 @@
       <div class="skill-card">
         <div class="icon" style="background: var(--red);">GD</div>
         <h3>Game Design</h3>
-        <ul>
+        <ul lang="es">
           <li>Diseño de experiencias de juego</li>
           <li>Diseño de niveles y ritmo</li>
           <li>Iteración y playtesting</li>
         </ul>
+        <ul lang="en">
+          <li>Game experience design</li>
+          <li>Level design and pacing</li>
+          <li>Iteration and playtesting</li>
+        </ul>
       </div>
       <div class="skill-card">
         <div class="icon" style="background: var(--teal);">&lt;/&gt;</div>
-        <h3>Programación</h3>
-        <ul>
+        <h3><span lang="es">Programación</span><span lang="en">Programming</span></h3>
+        <ul lang="es">
           <li>C# · C · Java · Kotlin</li>
           <li>Gameplay y game loops</li>
           <li>Algoritmos y estructuras</li>
         </ul>
+        <ul lang="en">
+          <li>C# · C · Java · Kotlin</li>
+          <li>Gameplay and game loops</li>
+          <li>Algorithms and data structures</li>
+        </ul>
       </div>
       <div class="skill-card">
         <div class="icon" style="background: var(--red-deep);">2D</div>
-        <h3>Producción</h3>
-        <ul>
+        <h3><span lang="es">Producción</span><span lang="en">Production</span></h3>
+        <ul lang="es">
           <li>Pixel art</li>
           <li>Prototipado rápido</li>
           <li>Publicación en itch.io</li>
         </ul>
+        <ul lang="en">
+          <li>Pixel art</li>
+          <li>Rapid prototyping</li>
+          <li>Publishing on itch.io</li>
+        </ul>
       </div>
       <div class="skill-card">
         <div class="icon" style="background: var(--teal-soft);">☺</div>
-        <h3>Equipo</h3>
-        <ul>
+        <h3><span lang="es">Equipo</span><span lang="en">Teamwork</span></h3>
+        <ul lang="es">
           <li>Trabajo colaborativo</li>
           <li>Control de versiones (Git)</li>
           <li>Comunicación de diseño</li>
+        </ul>
+        <ul lang="en">
+          <li>Collaborative work</li>
+          <li>Version control (Git)</li>
+          <li>Communicating design</li>
         </ul>
       </div>
     </div>
@@ -128,29 +156,33 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">03</span>
-      <span class="section-title">Trayectoria</span>
+      <span class="section-title"><span lang="es">Trayectoria</span><span lang="en">Journey</span></span>
       <span class="section-line"></span>
     </div>
     <div class="timeline">
       <div class="tl-item">
         <div class="tl-when">2026</div>
-        <div class="tl-what"><strong>Los Robots se Volvieron Locos y Atacan el Reino</strong><p>Tower defense de estrategia: defensa por oleadas con gestión de recursos. Game design y programación en Unity (C#).</p></div>
+        <div class="tl-what"><strong>Auralis</strong><p lang="es">Puzzle-platformer en equipo para la SANDA Game Jam 2026: un solo input para dos personajes. Idea, game design y programación en Unity (C#).</p><p lang="en">A team puzzle platformer for the SANDA Game Jam 2026: one input for two characters. Concept, game design and programming in Unity (C#).</p></div>
       </div>
       <div class="tl-item">
         <div class="tl-when">2026</div>
-        <div class="tl-what"><strong>Templo Utaki</strong><p>Platformer 2D en equipo con mecánica de gancho de agarre. Game design y programación en Unity (C#).</p></div>
+        <div class="tl-what"><strong>Los Robots se Volvieron Locos y Atacan el Reino</strong><p lang="es">Tower defense de estrategia: defensa por oleadas con gestión de recursos. Game design y programación en Unity (C#).</p><p lang="en">A strategy tower defense: wave defense with resource management. Game design and programming in Unity (C#).</p></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-when">2026</div>
+        <div class="tl-what"><strong>Templo Utaki</strong><p lang="es">Platformer 2D en equipo con mecánica de gancho de agarre. Game design y programación en Unity (C#).</p><p lang="en">A team 2D platformer built around a grappling hook. Game design and programming in Unity (C#).</p></div>
       </div>
       <div class="tl-item">
         <div class="tl-when">2025</div>
-        <div class="tl-what"><strong>Shadows: Shunned by Light</strong><p>Puzzle top-down en equipo con la muerte como mecánica. Game design y programación en Unity (C#).</p></div>
+        <div class="tl-what"><strong>Shadows: Shunned by Light</strong><p lang="es">Puzzle top-down en equipo con la muerte como mecánica. Game design y programación en Unity (C#).</p><p lang="en">A team top-down puzzle game with death as a mechanic. Game design and programming in Unity (C#).</p></div>
       </div>
       <div class="tl-item">
-        <div class="tl-when">En curso</div>
-        <div class="tl-what"><strong>Licenciatura en Desarrollo de Videojuegos — UADE</strong><p>Formación actual en diseño y desarrollo de videojuegos.</p></div>
+        <div class="tl-when"><span lang="es">En curso</span><span lang="en">Ongoing</span></div>
+        <div class="tl-what"><strong><span lang="es">Licenciatura en Desarrollo de Videojuegos — UADE</span><span lang="en">Bachelor's in Video Game Development — UADE</span></strong><p lang="es">Formación actual en diseño y desarrollo de videojuegos.</p><p lang="en">Current studies in game design and development.</p></div>
       </div>
       <div class="tl-item">
-        <div class="tl-when">3 años</div>
-        <div class="tl-what"><strong>Tecnicatura en Desarrollo de Software</strong><p>Base técnica en programación y desarrollo.</p></div>
+        <div class="tl-when"><span lang="es">3 años</span><span lang="en">3 years</span></div>
+        <div class="tl-what"><strong><span lang="es">Tecnicatura en Desarrollo de Software</span><span lang="en">Software Development technical degree</span></strong><p lang="es">Base técnica en programación y desarrollo.</p><p lang="en">A technical foundation in programming and development.</p></div>
       </div>
     </div>
   </div>
@@ -158,8 +190,9 @@
 
 <section id="contacto3">
   <div class="contact" style="margin-top: 20px;">
-    <h2>¿Hacemos algo juntos?</h2>
-    <p>Estoy abierto a colaboraciones, prácticas y oportunidades en game design y desarrollo.</p>
+    <h2><span lang="es">¿Hacemos algo juntos?</span><span lang="en">Shall we make something together?</span></h2>
+    <p lang="es">Estoy abierto a colaboraciones, prácticas y oportunidades en game design y desarrollo.</p>
+    <p lang="en">I'm open to collaborations, internships and opportunities in game design and development.</p>
     <div class="contact-links">
       <a href="mailto:dipaccebono@gmail.com" class="btn btn-fill">dipaccebono@gmail.com</a>
       <a href="https://github.com/Lyed01" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
@@ -168,7 +201,7 @@
   </div>
 </section>
 
-<footer class="site-footer">© 2026 Bono Dipacce — hecho con ♥ en Argentina</footer>
+<footer class="site-footer"><span lang="es">© 2026 Bono Dipacce — hecho con ♥ en Argentina</span><span lang="en">© 2026 Bono Dipacce — made with ♥ in Argentina</span></footer>
 
 </body>
 </html>

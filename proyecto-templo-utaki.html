@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Templo Utaki — Bono Dipacce</title>
+<meta name="title-en" content="Templo Utaki — Bono Dipacce">
 <meta name="description" content="Platformer 2D en pixel art hecho en Unity y C#: explorás un templo antiguo con un gancho de agarre, entre trampas y guardianes. Caso de diseño y desarrollo.">
 <link rel="canonical" href="https://lyed01.github.io/proyecto-templo-utaki.html">
 
@@ -15,6 +16,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Bono Dipacce — Portfolio">
 <meta property="og:locale" content="es_AR">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:title" content="Templo Utaki — Bono Dipacce">
 <meta property="og:description" content="Platformer 2D donde explorás un templo antiguo con un gancho de agarre. Cada salto, giro y suelta importa.">
 <meta property="og:url" content="https://lyed01.github.io/proyecto-templo-utaki.html">
@@ -28,6 +30,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
 </head>
 <body>
 
@@ -35,10 +38,11 @@
   <nav class="wrap">
     <a href="index.html" class="logo"><span class="logo-mark"></span>Bono Dipacce</a>
     <div class="navlinks">
-      <a href="index.html">Inicio</a>
-      <a href="proyectos.html">Otros proyectos</a>
-      <a href="sobre-mi.html">Sobre mí</a>
-      <a href="index.html#contacto">Contacto</a>
+      <a href="index.html"><span lang="es">Inicio</span><span lang="en">Home</span></a>
+      <a href="proyectos.html"><span lang="es">Otros proyectos</span><span lang="en">More projects</span></a>
+      <a href="sobre-mi.html"><span lang="es">Sobre mí</span><span lang="en">About</span></a>
+      <a href="index.html#contacto"><span lang="es">Contacto</span><span lang="en">Contact</span></a>
+      <button class="lang-toggle" type="button" aria-label="Cambiar idioma / Change language"><span class="opt-es">ES</span><span class="sep">/</span><span class="opt-en">EN</span></button>
     </div>
   </nav>
 </header>
@@ -46,21 +50,22 @@
 <!-- ===================== HERO DEL PROYECTO ===================== -->
 <section class="proj-hero">
   <div class="wrap">
-    <div class="proj-kicker">Plataformas · Aventura · Pixel Art</div>
+    <div class="proj-kicker"><span lang="es">Plataformas · Aventura · Pixel Art</span><span lang="en">Platformer · Adventure · Pixel Art</span></div>
     <h1 class="proj-title">Templo Utaki</h1>
-    <p class="proj-lead">Un platformer 2D en pixel art donde explorás un templo antiguo con un <strong>gancho de agarre</strong> que se vuelve tu mejor amigo mientras te internás más profundo. Balanceate entre trampas letales, burlá a guardianes ancestrales y descubrí secretos. Cada salto, giro y suelta importa.</p>
+    <p class="proj-lead" lang="es">Un platformer 2D en pixel art donde explorás un templo antiguo con un <strong>gancho de agarre</strong> que se vuelve tu mejor amigo mientras te internás más profundo. Balanceate entre trampas letales, burlá a guardianes ancestrales y descubrí secretos. Cada salto, giro y suelta importa.</p>
+    <p class="proj-lead" lang="en">A 2D pixel art platformer where you explore an ancient temple with a <strong>grappling hook</strong> that becomes your best friend as you venture deeper. Swing past deadly traps, outsmart ancient guardians and uncover secrets. Every jump, swing and release matters.</p>
     <div class="proj-cta">
-      <a href="https://sce07.itch.io/templo-utaki" target="_blank" rel="noopener" class="btn btn-fill">Jugar / Descargar en itch.io ↗</a>
+      <a href="https://sce07.itch.io/templo-utaki" target="_blank" rel="noopener" class="btn btn-fill"><span lang="es">Jugar / Descargar en itch.io ↗</span><span lang="en">Play / Download on itch.io ↗</span></a>
     </div>
 
     <!-- Barra de metadatos -->
     <div class="proj-meta">
-      <div class="m"><div class="k">Mi rol</div><div class="v">Game Design + Programación</div></div>
-      <div class="m"><div class="k">Equipo</div><div class="v">Proyecto grupal</div></div>
-      <div class="m"><div class="k">Género</div><div class="v">Plataformas</div></div>
-      <div class="m"><div class="k">Plataforma</div><div class="v">Windows</div></div>
-      <div class="m"><div class="k">Duración</div><div class="v">Corto</div></div>
-      <div class="m"><div class="k">Estado</div><div class="v">En desarrollo</div></div>
+      <div class="m"><div class="k"><span lang="es">Mi rol</span><span lang="en">My role</span></div><div class="v"><span lang="es">Game Design + Programación</span><span lang="en">Game Design + Programming</span></div></div>
+      <div class="m"><div class="k"><span lang="es">Equipo</span><span lang="en">Team</span></div><div class="v"><span lang="es">Proyecto grupal</span><span lang="en">Team project</span></div></div>
+      <div class="m"><div class="k"><span lang="es">Género</span><span lang="en">Genre</span></div><div class="v"><span lang="es">Plataformas</span><span lang="en">Platformer</span></div></div>
+      <div class="m"><div class="k"><span lang="es">Plataforma</span><span lang="en">Platform</span></div><div class="v">Windows</div></div>
+      <div class="m"><div class="k"><span lang="es">Duración</span><span lang="en">Length</span></div><div class="v"><span lang="es">Corto</span><span lang="en">Short</span></div></div>
+      <div class="m"><div class="k"><span lang="es">Estado</span><span lang="en">Status</span></div><div class="v"><span lang="es">En desarrollo</span><span lang="en">In development</span></div></div>
     </div>
   </div>
 </section>
@@ -75,29 +80,33 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">01</span>
-      <span class="section-title">El concepto</span>
+      <span class="section-title"><span lang="es">El concepto</span><span lang="en">The concept</span></span>
       <span class="section-line"></span>
     </div>
     <div class="prose">
-      <p>Templo Utaki gira alrededor de una mecánica de movimiento: el <strong>gancho de agarre</strong>. En vez de un platformer de saltos clásicos, el desafío está en encadenar balanceos con timing y leer el espacio para no caer en las trampas.</p>
+      <p lang="es">Templo Utaki gira alrededor de una mecánica de movimiento: el <strong>gancho de agarre</strong>. En vez de un platformer de saltos clásicos, el desafío está en encadenar balanceos con timing y leer el espacio para no caer en las trampas.</p>
+      <p lang="en">Templo Utaki revolves around one movement mechanic: the <strong>grappling hook</strong>. Instead of a classic jumping platformer, the challenge lies in chaining swings with good timing and reading the space so you don't fall into traps.</p>
     </div>
 
     <!-- Pilares de diseño -->
     <div class="pillars">
       <div class="pillar">
-        <div class="n">Pilar 01</div>
-        <h3>El gancho como verbo</h3>
-        <p>Toda la experiencia gira alrededor de balancearse. Cada nivel es una excusa para dominar el gancho un poco más.</p>
+        <div class="n"><span lang="es">Pilar 01</span><span lang="en">Pillar 01</span></div>
+        <h3><span lang="es">El gancho como verbo</span><span lang="en">The hook as a verb</span></h3>
+        <p lang="es">Toda la experiencia gira alrededor de balancearse. Cada nivel es una excusa para dominar el gancho un poco más.</p>
+        <p lang="en">The whole experience revolves around swinging. Every level is an excuse to master the hook a little more.</p>
       </div>
       <div class="pillar">
-        <div class="n">Pilar 02</div>
-        <h3>Riesgo y ritmo</h3>
-        <p>Trampas letales y guardianes obligan a mantener el impulso. Frenar es peligroso; fluir es la recompensa.</p>
+        <div class="n"><span lang="es">Pilar 02</span><span lang="en">Pillar 02</span></div>
+        <h3><span lang="es">Riesgo y ritmo</span><span lang="en">Risk and rhythm</span></h3>
+        <p lang="es">Trampas letales y guardianes obligan a mantener el impulso. Frenar es peligroso; fluir es la recompensa.</p>
+        <p lang="en">Deadly traps and guardians push you to keep your momentum. Stopping is dangerous; flowing is the reward.</p>
       </div>
       <div class="pillar">
-        <div class="n">Pilar 03</div>
-        <h3>Exploración con secretos</h3>
-        <p>El templo premia la curiosidad con secretos ocultos para quien se anima a desviarse del camino.</p>
+        <div class="n"><span lang="es">Pilar 03</span><span lang="en">Pillar 03</span></div>
+        <h3><span lang="es">Exploración con secretos</span><span lang="en">Exploration with secrets</span></h3>
+        <p lang="es">El templo premia la curiosidad con secretos ocultos para quien se anima a desviarse del camino.</p>
+        <p lang="en">The temple rewards curiosity with hidden secrets for those who dare to stray from the path.</p>
       </div>
     </div>
   </div>
@@ -108,7 +117,7 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">02</span>
-      <span class="section-title">Mi aporte al equipo</span>
+      <span class="section-title"><span lang="es">Mi aporte al equipo</span><span lang="en">My contribution</span></span>
       <span class="section-line"></span>
     </div>
     <div class="prose">
@@ -122,7 +131,7 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">03</span>
-      <span class="section-title">Galería</span>
+      <span class="section-title"><span lang="es">Galería</span><span lang="en">Gallery</span></span>
       <span class="section-line"></span>
     </div>
     <div class="gallery">
@@ -139,22 +148,23 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">04</span>
-      <span class="section-title">Tecnología y equipo</span>
+      <span class="section-title"><span lang="es">Tecnología y equipo</span><span lang="en">Tech and team</span></span>
       <span class="section-line"></span>
     </div>
     <div class="prose" style="margin-bottom:26px;">
-      <p>Platformer 2D en pixel art para Windows, desarrollado en <strong>Unity</strong> con <strong>C#</strong>. Sin uso de IA generativa.</p>
+      <p lang="es">Platformer 2D en pixel art para Windows, desarrollado en <strong>Unity</strong> con <strong>C#</strong>. Sin uso de IA generativa.</p>
+      <p lang="en">A 2D pixel art platformer for Windows, developed in <strong>Unity</strong> with <strong>C#</strong>. No generative AI was used.</p>
     </div>
     <div class="pills" style="margin-bottom:34px;">
       <span class="pill">Unity</span>
       <span class="pill">C#</span>
       <span class="pill">Pixel Art</span>
-      <span class="pill">Plataformas 2D</span>
-      <span class="pill">Trabajo en equipo</span>
+      <span class="pill"><span lang="es">Plataformas 2D</span><span lang="en">2D Platformer</span></span>
+      <span class="pill"><span lang="es">Trabajo en equipo</span><span lang="en">Teamwork</span></span>
     </div>
 
     <div class="credits">
-      <div class="credit"><div class="role">Game Design + Programación</div><div class="name">Bono Dipacce</div></div>
+      <div class="credit"><div class="role"><span lang="es">Game Design + Programación</span><span lang="en">Game Design + Programming</span></div><div class="name">Bono Dipacce</div></div>
       <div class="credit"><div class="role">[Rol]</div><div class="name">[Nombre]</div></div>
     </div>
   </div>
@@ -165,16 +175,16 @@
   <div class="wrap">
     <a href="proyecto-robots.html" class="next-proj">
       <div>
-        <div class="lbl">Siguiente proyecto →</div>
+        <div class="lbl"><span lang="es">Siguiente proyecto →</span><span lang="en">Next project →</span></div>
         <div class="nm">Los Robots se Volvieron Locos y Atacan el Reino</div>
       </div>
-      <span class="btn btn-ghost">Ver caso</span>
+      <span class="btn btn-ghost"><span lang="es">Ver caso</span><span lang="en">View case</span></span>
     </a>
-    <a href="proyectos.html" class="backlink">← Volver a todos los proyectos</a>
+    <a href="proyectos.html" class="backlink"><span lang="es">← Volver a todos los proyectos</span><span lang="en">← Back to all projects</span></a>
   </div>
 </section>
 
-<footer class="site-footer">© 2026 Bono Dipacce — hecho con ♥ en Argentina</footer>
+<footer class="site-footer"><span lang="es">© 2026 Bono Dipacce — hecho con ♥ en Argentina</span><span lang="en">© 2026 Bono Dipacce — made with ♥ in Argentina</span></footer>
 
 </body>
 </html>

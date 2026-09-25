@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Otros proyectos — Bono Dipacce</title>
+<meta name="title-en" content="More projects — Bono Dipacce">
 <meta name="description" content="Catálogo completo de los juegos y prototipos en los que trabajé como game designer y programador.">
 <link rel="canonical" href="https://lyed01.github.io/proyectos.html">
 
@@ -15,6 +16,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Bono Dipacce — Portfolio">
 <meta property="og:locale" content="es_AR">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:title" content="Otros proyectos — Bono Dipacce">
 <meta property="og:description" content="Catálogo completo de los juegos y prototipos en los que trabajé como game designer y programador.">
 <meta property="og:url" content="https://lyed01.github.io/proyectos.html">
@@ -28,6 +30,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
 </head>
 <body>
 
@@ -35,10 +38,11 @@
   <nav class="wrap">
     <a href="index.html" class="logo"><span class="logo-mark"></span>Bono Dipacce</a>
     <div class="navlinks">
-      <a href="index.html">Inicio</a>
-      <a href="proyectos.html" class="active">Otros proyectos</a>
-      <a href="sobre-mi.html">Sobre mí</a>
-      <a href="index.html#contacto">Contacto</a>
+      <a href="index.html"><span lang="es">Inicio</span><span lang="en">Home</span></a>
+      <a href="proyectos.html" class="active"><span lang="es">Otros proyectos</span><span lang="en">More projects</span></a>
+      <a href="sobre-mi.html"><span lang="es">Sobre mí</span><span lang="en">About</span></a>
+      <a href="index.html#contacto"><span lang="es">Contacto</span><span lang="en">Contact</span></a>
+      <button class="lang-toggle" type="button" aria-label="Cambiar idioma / Change language"><span class="opt-es">ES</span><span class="sep">/</span><span class="opt-en">EN</span></button>
     </div>
   </nav>
 </header>
@@ -46,9 +50,10 @@
 <section class="hero" style="padding: 80px 0 50px;">
   <div class="hero-glow"></div>
   <div class="wrap">
-    <div class="eyebrow">CATÁLOGO COMPLETO</div>
-    <h1 class="title" style="font-size: clamp(2rem, 5vw, 3.2rem);">Otros <em>proyectos</em></h1>
-    <p class="hero-desc">Todo lo que fui construyendo, agrupado por disciplina: juegos terminados y experimentos de programación donde practico sistemas, algoritmos y motores.</p>
+    <div class="eyebrow"><span lang="es">CATÁLOGO COMPLETO</span><span lang="en">FULL CATALOG</span></div>
+    <h1 class="title" style="font-size: clamp(2rem, 5vw, 3.2rem);"><span lang="es">Otros <em>proyectos</em></span><span lang="en">More <em>projects</em></span></h1>
+    <p class="hero-desc" lang="es">Todo lo que fui construyendo, agrupado por disciplina: juegos terminados y experimentos de programación donde practico sistemas, algoritmos y motores.</p>
+    <p class="hero-desc" lang="en">Everything I've been building, grouped by discipline: finished games and programming experiments where I practice systems, algorithms and engines.</p>
   </div>
 </section>
 
@@ -57,26 +62,38 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">01</span>
-      <span class="section-title">Juegos</span>
+      <span class="section-title"><span lang="es">Juegos</span><span lang="en">Games</span></span>
       <span class="section-line"></span>
     </div>
 
     <div class="grid">
+      <a href="proyecto-auralis.html" class="card">
+        <div class="card-art art-2d has-img"><img src="img/auralis-cover.png" alt="Portada de Auralis" class="pixel"><span class="card-chip">Puzzle-platformer</span></div>
+        <div class="card-body">
+          <div class="card-title">Auralis</div>
+          <p class="card-desc" lang="es">Un solo input mueve a dos fragmentos que buscan volver a ser uno. Hecho para la SANDA Game Jam 2026.</p>
+          <p class="card-desc" lang="en">A single input moves two fragments trying to become one again. Made for the SANDA Game Jam 2026.</p>
+          <div class="pills"><span class="pill">Unity</span><span class="pill">Game Jam</span></div>
+        </div>
+      </a>
+
       <a href="proyecto-shadows.html" class="card">
         <div class="card-art art-3d has-img"><img src="img/shadows-cover.gif" alt="Portada de Shadows" class="pixel"><span class="card-chip">Puzzle</span></div>
         <div class="card-body">
           <div class="card-title">Shadows: Shunned by Light</div>
-          <p class="card-desc">Puzzle top-down donde la luz te mata o te salva y la muerte es una herramienta.</p>
+          <p class="card-desc" lang="es">Puzzle top-down donde la luz te mata o te salva y la muerte es una herramienta.</p>
+          <p class="card-desc" lang="en">A top-down puzzle game where light kills you or saves you, and death is a tool.</p>
           <div class="pills"><span class="pill">C#</span><span class="pill">Pixel Art</span></div>
         </div>
       </a>
 
       <a href="proyecto-templo-utaki.html" class="card">
-        <div class="card-art art-2d has-img"><img src="img/utaki-cover.png" alt="Portada de Templo Utaki"><span class="card-chip">Plataformas</span></div>
+        <div class="card-art art-2d has-img"><img src="img/utaki-cover.png" alt="Portada de Templo Utaki"><span class="card-chip"><span lang="es">Plataformas</span><span lang="en">Platformer</span></span></div>
         <div class="card-body">
           <div class="card-title">Templo Utaki</div>
-          <p class="card-desc">Platformer 2D de aventura con gancho de agarre, trampas y guardianes antiguos.</p>
-          <div class="pills"><span class="pill">Pixel Art</span><span class="pill">Plataformas</span></div>
+          <p class="card-desc" lang="es">Platformer 2D de aventura con gancho de agarre, trampas y guardianes antiguos.</p>
+          <p class="card-desc" lang="en">A 2D adventure platformer with a grappling hook, traps and ancient guardians.</p>
+          <div class="pills"><span class="pill">Pixel Art</span><span class="pill"><span lang="es">Plataformas</span><span lang="en">Platformer</span></span></div>
         </div>
       </a>
 
@@ -84,8 +101,9 @@
         <div class="card-art art-code has-img"><img src="img/robots-cover.png" alt="Portada de Los Robots se Volvieron Locos y Atacan el Reino"><span class="card-chip">Tower Defense</span></div>
         <div class="card-body">
           <div class="card-title">Los Robots se Volvieron Locos y Atacan el Reino</div>
-          <p class="card-desc">Tower defense de estrategia: aguantá oleadas de robots colocando torres y administrando recursos.</p>
-          <div class="pills"><span class="pill">Unity</span><span class="pill">Estrategia</span></div>
+          <p class="card-desc" lang="es">Tower defense de estrategia: aguantá oleadas de robots colocando torres y administrando recursos.</p>
+          <p class="card-desc" lang="en">A strategy tower defense: hold off waves of robots by placing towers and managing resources.</p>
+          <div class="pills"><span class="pill">Unity</span><span class="pill"><span lang="es">Estrategia</span><span lang="en">Strategy</span></span></div>
         </div>
       </a>
     </div>
@@ -97,18 +115,20 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-num">02</span>
-      <span class="section-title">Programación & experimentos</span>
+      <span class="section-title"><span lang="es">Programación &amp; experimentos</span><span lang="en">Programming &amp; experiments</span></span>
       <span class="section-line"></span>
     </div>
-    <p class="section-sub">Ejercicios y proyectos técnicos donde practico lenguajes, algoritmos y arquitectura. Todo el código está público en mi GitHub.</p>
+    <p class="section-sub" lang="es">Ejercicios y proyectos técnicos donde practico lenguajes, algoritmos y arquitectura. Todo el código está público en mi GitHub.</p>
+    <p class="section-sub" lang="en">Exercises and technical projects where I practice languages, algorithms and architecture. All the code is public on my GitHub.</p>
 
     <div class="grid">
       <a href="https://github.com/Lyed01/Po-ong" target="_blank" rel="noopener" class="card">
-        <div class="card-art art-code"><span class="card-chip">Gameplay en C</span></div>
+        <div class="card-art art-code"><span class="card-chip"><span lang="es">Gameplay en C</span><span lang="en">Gameplay in C</span></span></div>
         <div class="card-body">
-          <span class="card-tag">Programación</span>
+          <span class="card-tag"><span lang="es">Programación</span><span lang="en">Programming</span></span>
           <div class="card-title">Po-ong</div>
-          <p class="card-desc">Un Pong hecho desde cero en C. Práctica de game loop, colisiones y entrada por teclado.</p>
+          <p class="card-desc" lang="es">Un Pong hecho desde cero en C. Práctica de game loop, colisiones y entrada por teclado.</p>
+          <p class="card-desc" lang="en">A Pong made from scratch in C. Practice with the game loop, collisions and keyboard input.</p>
           <div class="pills"><span class="pill">C</span><span class="pill">Gameplay</span></div>
         </div>
       </a>
@@ -116,35 +136,38 @@
       <a href="https://github.com/Lyed01/CharacterSelect" target="_blank" rel="noopener" class="card">
         <div class="card-art art-code"><span class="card-chip">UI / C</span></div>
         <div class="card-body">
-          <span class="card-tag">Programación</span>
+          <span class="card-tag"><span lang="es">Programación</span><span lang="en">Programming</span></span>
           <div class="card-title">Character Select</div>
-          <p class="card-desc">Pantalla de selección de personaje en C. Práctica de estados, render y navegación de menú.</p>
+          <p class="card-desc" lang="es">Pantalla de selección de personaje en C. Práctica de estados, render y navegación de menú.</p>
+          <p class="card-desc" lang="en">A character select screen in C. Practice with states, rendering and menu navigation.</p>
           <div class="pills"><span class="pill">C</span><span class="pill">UI</span></div>
         </div>
       </a>
 
       <a href="https://github.com/Lyed01/Algoritmo-Kruskal-Grafos" target="_blank" rel="noopener" class="card">
-        <div class="card-art art-doc"><span class="card-chip">Algoritmos</span></div>
+        <div class="card-art art-doc"><span class="card-chip"><span lang="es">Algoritmos</span><span lang="en">Algorithms</span></span></div>
         <div class="card-body">
-          <span class="card-tag">Programación</span>
-          <div class="card-title">Algoritmo de Kruskal</div>
-          <p class="card-desc">Implementación del árbol de expansión mínima sobre grafos en Java.</p>
-          <div class="pills"><span class="pill">Java</span><span class="pill">Grafos</span></div>
+          <span class="card-tag"><span lang="es">Programación</span><span lang="en">Programming</span></span>
+          <div class="card-title"><span lang="es">Algoritmo de Kruskal</span><span lang="en">Kruskal's Algorithm</span></div>
+          <p class="card-desc" lang="es">Implementación del árbol de expansión mínima sobre grafos en Java.</p>
+          <p class="card-desc" lang="en">A minimum spanning tree implementation over graphs, in Java.</p>
+          <div class="pills"><span class="pill">Java</span><span class="pill"><span lang="es">Grafos</span><span lang="en">Graphs</span></span></div>
         </div>
       </a>
 
       <a href="https://github.com/Lyed01/AndroidServerStatus" target="_blank" rel="noopener" class="card">
-        <div class="card-art art-doc"><span class="card-chip">App Android</span></div>
+        <div class="card-art art-doc"><span class="card-chip"><span lang="es">App Android</span><span lang="en">Android app</span></span></div>
         <div class="card-body">
-          <span class="card-tag">Programación</span>
+          <span class="card-tag"><span lang="es">Programación</span><span lang="en">Programming</span></span>
           <div class="card-title">Android Server Status</div>
-          <p class="card-desc">Aplicación Android en Kotlin para monitorear el estado de un servidor.</p>
+          <p class="card-desc" lang="es">Aplicación Android en Kotlin para monitorear el estado de un servidor.</p>
+          <p class="card-desc" lang="en">An Android app in Kotlin to monitor a server's status.</p>
           <div class="pills"><span class="pill">Kotlin</span><span class="pill">Android</span></div>
         </div>
       </a>
 
       <a href="https://github.com/Lyed01" target="_blank" rel="noopener" class="card-more">
-        <span>Ver todo mi<br>GitHub →</span>
+        <span lang="es">Ver todo mi<br>GitHub →</span><span lang="en">See all my<br>GitHub →</span>
       </a>
     </div>
   </div>
@@ -152,8 +175,9 @@
 
 <section id="contacto2">
   <div class="contact" style="margin-top: 20px;">
-    <h2>¿Hacemos algo juntos?</h2>
-    <p>Estoy abierto a colaboraciones, prácticas y oportunidades en game design y desarrollo.</p>
+    <h2><span lang="es">¿Hacemos algo juntos?</span><span lang="en">Shall we make something together?</span></h2>
+    <p lang="es">Estoy abierto a colaboraciones, prácticas y oportunidades en game design y desarrollo.</p>
+    <p lang="en">I'm open to collaborations, internships and opportunities in game design and development.</p>
     <div class="contact-links">
       <a href="mailto:dipaccebono@gmail.com" class="btn btn-fill">dipaccebono@gmail.com</a>
       <a href="https://github.com/Lyed01" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
@@ -162,7 +186,7 @@
   </div>
 </section>
 
-<footer class="site-footer">© 2026 Bono Dipacce — hecho con ♥ en Argentina</footer>
+<footer class="site-footer"><span lang="es">© 2026 Bono Dipacce — hecho con ♥ en Argentina</span><span lang="en">© 2026 Bono Dipacce — made with ♥ in Argentina</span></footer>
 
 </body>
 </html>

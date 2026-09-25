@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auralis — Bono Dipacce</title>
+<meta name="title-en" content="Auralis — Bono Dipacce">
+<meta name="description" content="Puzzle-platformer 2D hecho en Unity y C# para la SANDA Game Jam 2026: un solo input mueve a dos fragmentos que buscan volver a ser uno. Caso de diseño y desarrollo.">
+<link rel="canonical" href="https://lyed01.github.io/proyecto-auralis.html">
+
+<link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#17130E">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Bono Dipacce — Portfolio">
+<meta property="og:locale" content="es_AR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Auralis — Bono Dipacce">
+<meta property="og:description" content="Nacidos de un mismo origen, dos fragmentos intentan volver a ser uno. Un solo input mueve a los dos. Hecho para la SANDA Game Jam 2026.">
+<meta property="og:url" content="https://lyed01.github.io/proyecto-auralis.html">
+<meta property="og:image" content="https://lyed01.github.io/img/og-auralis.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Auralis — puzzle-platformer en pixel art">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="logo"><span class="logo-mark"></span>Bono Dipacce</a>
+    <div class="navlinks">
+      <a href="index.html"><span lang="es">Inicio</span><span lang="en">Home</span></a>
+      <a href="proyectos.html"><span lang="es">Otros proyectos</span><span lang="en">More projects</span></a>
+      <a href="sobre-mi.html"><span lang="es">Sobre mí</span><span lang="en">About</span></a>
+      <a href="index.html#contacto"><span lang="es">Contacto</span><span lang="en">Contact</span></a>
+      <button class="lang-toggle" type="button" aria-label="Cambiar idioma / Change language"><span class="opt-es">ES</span><span class="sep">/</span><span class="opt-en">EN</span></button>
+    </div>
+  </nav>
+</header>
+
+<!-- ===================== HERO DEL PROYECTO ===================== -->
+<section class="proj-hero">
+  <div class="wrap">
+    <div class="proj-kicker"><span lang="es">Puzzle-platformer · Game Jam · Pixel Art</span><span lang="en">Puzzle platformer · Game Jam · Pixel Art</span></div>
+    <h1 class="proj-title">Auralis</h1>
+    <p class="proj-lead" lang="es">Nacidos de un mismo origen, <strong>Ipse</strong> y <strong>Alter</strong> son dos fragmentos que intentan volver a ser uno. Los movés a los dos con <strong>las mismas teclas</strong>, en un mundo donde hay paredes que existen para uno y no para el otro. Lo hicimos entre tres para la <strong>SANDA Game Jam 2026</strong>, con el tema <em>Fragmentos</em>.</p>
+    <p class="proj-lead" lang="en">Born from the same origin, <strong>Ipse</strong> and <strong>Alter</strong> are two fragments trying to become one again. You move both of them with <strong>the same keys</strong>, in a world where some walls exist for one and not for the other. We made it as a team of three for the <strong>SANDA Game Jam 2026</strong>, under the theme <em>Fragments</em>.</p>
+    <div class="proj-cta">
+      <a href="https://lyed01.itch.io/auralis" target="_blank" rel="noopener" class="btn btn-fill"><span lang="es">Jugar en el navegador (itch.io) ↗</span><span lang="en">Play in your browser (itch.io) ↗</span></a>
+    </div>
+
+    <!-- Barra de metadatos -->
+    <div class="proj-meta">
+      <div class="m"><div class="k"><span lang="es">Mi rol</span><span lang="en">My role</span></div><div class="v"><span lang="es">Idea, Game Design + Programación</span><span lang="en">Concept, Game Design + Programming</span></div></div>
+      <div class="m"><div class="k"><span lang="es">Equipo</span><span lang="en">Team</span></div><div class="v"><span lang="es">3 personas</span><span lang="en">3 people</span></div></div>
+      <div class="m"><div class="k"><span lang="es">Motor / Tech</span><span lang="en">Engine / Tech</span></div><div class="v">Unity · C#</div></div>
+      <div class="m"><div class="k"><span lang="es">Género</span><span lang="en">Genre</span></div><div class="v"><span lang="es">Puzzle-platformer</span><span lang="en">Puzzle platformer</span></div></div>
+      <div class="m"><div class="k"><span lang="es">Contenido</span><span lang="en">Content</span></div><div class="v"><span lang="es">17 niveles · 2 finales</span><span lang="en">17 levels · 2 endings</span></div></div>
+      <div class="m"><div class="k"><span lang="es">Plataforma</span><span lang="en">Platform</span></div><div class="v"><span lang="es">Navegador</span><span lang="en">Browser</span></div></div>
+      <div class="m"><div class="k"><span lang="es">Evento</span><span lang="en">Event</span></div><div class="v">SANDA Game Jam 2026</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Portada grande -->
+<div class="wrap">
+  <div class="shot proj-cover"><img src="img/auralis-cover.png" alt="Portada de Auralis: Ipse y Alter junto al cristal" class="pixel"></div>
+</div>
+
+<!-- ===================== CONCEPTO ===================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <span class="section-title"><span lang="es">El concepto</span><span lang="en">The concept</span></span>
+      <span class="section-line"></span>
+    </div>
+    <div class="prose">
+      <p lang="es">El tema de la jam era <strong>Fragmentos</strong>. En vez de dibujarlo, quisimos que se sintiera en las manos: <strong>un solo input mueve dos cuerpos a la vez</strong>, y el desafío no es esquivar nada, sino encontrar el terreno que los desincroniza.</p>
+      <p lang="en">The jam's theme was <strong>Fragments</strong>. Instead of drawing it, we wanted you to feel it in your hands: <strong>a single input moves two bodies at once</strong>, and the challenge isn't dodging anything, but finding the terrain that pulls them out of sync.</p>
+      <p lang="es">Ipse y Alter nacen de un mismo cristal roto. Cada nivel entra en una pantalla y termina cuando los dos se tocan: se acercan, se funden y el nivel se cierra con un destello. Los nombres salen de la distinción entre identidad <em>ipse</em> e <em>idem</em> que retoma Ricoeur, y la pregunta que nos acompañó todo el proyecto fue esa: partidos, ¿siguen siendo la misma cosa?</p>
+      <p lang="en">Ipse and Alter are born from the same broken crystal. Each level fits on a single screen and ends when the two of them touch: they drift together, merge, and the level closes with a flash of light. Their names come from the distinction between <em>ipse</em> and <em>idem</em> identity that Ricoeur picks up, and that was the question we kept coming back to: once split apart, are they still the same thing?</p>
+    </div>
+
+    <!-- Pilares de diseño -->
+    <div class="pillars">
+      <div class="pillar">
+        <div class="n"><span lang="es">Pilar 01</span><span lang="en">Pillar 01</span></div>
+        <h3><span lang="es">Sin fracaso, sin castigo</span><span lang="en">No failure, no punishment</span></h3>
+        <p lang="es">No hay pinchos, vidas ni pantalla de derrota. Equivocarse cuesta un reintento instantáneo, nunca progreso. La única pérdida del juego es parte de la historia, no un error del jugador.</p>
+        <p lang="en">No spikes, no lives, no game over screen. A mistake costs an instant retry, never progress. The only loss in the game is part of the story, not a player's mistake.</p>
+      </div>
+      <div class="pillar">
+        <div class="n"><span lang="es">Pilar 02</span><span lang="en">Pillar 02</span></div>
+        <h3><span lang="es">Cero texto</span><span lang="en">Zero text</span></h3>
+        <p lang="es">El juego no explica nada con palabras. Enseña con niveles, color y luz, y cuenta su historia sin un solo diálogo.</p>
+        <p lang="en">The game explains nothing with words. It teaches through levels, color and light, and tells its story without a single line of dialogue.</p>
+      </div>
+      <div class="pillar">
+        <div class="n"><span lang="es">Pilar 03</span><span lang="en">Pillar 03</span></div>
+        <h3><span lang="es">Leer antes que sorprender</span><span lang="en">Readable before surprising</span></h3>
+        <p lang="es">Cada herramienta aparece primero en un nivel seguro y después se exige. Una idea por pantalla.</p>
+        <p lang="en">Every tool shows up first in a safe level before it's ever demanded. One idea per screen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DECISIÓN DE DISEÑO ===================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <span class="section-title"><span lang="es">Una decisión de diseño</span><span lang="en">A design decision</span></span>
+      <span class="section-line"></span>
+    </div>
+
+    <div class="callout">
+      <p lang="es">"El tema de la jam era Fragmentos. En vez de dibujarlo, lo pusimos en las manos."</p>
+      <p lang="en">"The jam's theme was Fragments. Instead of drawing it, we put it in your hands."</p>
+      <div class="who"><span lang="es">— Del pitch de Auralis</span><span lang="en">— From the Auralis pitch</span></div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3 lang="es"><span class="tag">El problema</span>Dos cuerpos atados no dejan decidir nada</h3>
+        <h3 lang="en"><span class="tag">The problem</span>Two bodies tied together leave nothing to decide</h3>
+        <p lang="es">Si los dos fragmentos hacen exactamente lo mismo todo el tiempo, no hay juego: apretás una tecla y pasan dos cosas iguales. Necesitábamos que el mundo los separara <strong>sin separar el control</strong>.</p>
+        <p lang="en">If both fragments do exactly the same thing all the time, there's no game: you press a key and the same thing happens twice. We needed the world to pull them apart <strong>without splitting the controls</strong>.</p>
+        <p lang="es">La respuesta fueron las <strong>paredes de color</strong>: bloques que son sólidos para uno y aire para el otro. Uno se apoya donde el otro cae, uno se traba mientras el otro sigue. Más adelante se suman la gravedad invertida en uno solo y el movimiento espejado. Para que se entienda de un vistazo, el mismo hecho se dice tres veces: con color, con forma y con un destello al chocar.</p>
+        <p lang="en">The answer was <strong>colored walls</strong>: blocks that are solid for one and thin air for the other. One lands where the other falls through; one gets stuck while the other keeps going. Later on, inverted gravity for just one of them and mirrored movement join in. To make it readable at a glance, the same fact is said three times: through color, through shape, and through a flash on impact.</p>
+      </div>
+      <div class="feature-media">
+        <div class="shot"><img src="img/auralis-1.png" alt="Ipse y Alter separados por paredes de color" class="pixel"></div>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3 lang="es"><span class="tag">La solución</span>Una sola decisión que no es para los dos</h3>
+        <h3 lang="en"><span class="tag">The solution</span>The only decision that isn't for both</h3>
+        <p lang="es">Todo en Auralis se lo hacés a los dos al mismo tiempo, salvo una cosa: el <strong>switch</strong>, que los cambia de lugar. No sirve para escapar —los dos se siguen moviendo igual—, sirve para <strong>elegir cuál queda de qué lado</strong>.</p>
+        <p lang="en">Everything in Auralis happens to both of them at once, except for one thing: the <strong>switch</strong>, which swaps their places. It's not a way out —they still move the same— it's a way to <strong>choose which one ends up on which side</strong>.</p>
+        <p lang="es">El intercambio también pasa la velocidad, así que un fragmento que viene cayendo le presta esa caída al otro. Y no se puede usar mientras alguno atraviesa una pared: desde dónde lo usás pasa a ser parte del plan.</p>
+        <p lang="en">The swap carries their momentum too, so a fragment in free fall lends that fall to the other one. And it can't be used while either of them is passing through a wall: where you trigger it from becomes part of the plan.</p>
+      </div>
+      <div class="feature-media">
+        <div class="shot"><img src="img/auralis-2.png" alt="El destello del switch al intercambiar a los fragmentos" class="pixel"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESO / ITERACIÓN ===================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <span class="section-title"><span lang="es">Proceso e iteración</span><span lang="en">Process and iteration</span></span>
+      <span class="section-line"></span>
+    </div>
+    <div class="prose">
+      <p lang="es">Una jam no da tiempo para todo, así que buena parte del proceso fue decidir qué sacar. Estas son las cuatro decisiones que más cambiaron el juego.</p>
+      <p lang="en">A jam doesn't leave time for everything, so a big part of the process was deciding what to cut. These are the four decisions that changed the game the most.</p>
+    </div>
+
+    <div class="iters">
+
+      <div class="iter">
+        <div class="n"><span lang="es">Iteración 01 — Lo que quedó afuera</span><span lang="en">Iteration 01 — What we left out</span></div>
+        <h3><span lang="es">Un modo que funcionaba y no entró</span><span lang="en">A mode that worked and didn't make it</span></h3>
+        <p lang="es">Llegamos a prototipar un <strong>modo unido</strong>: los dos fragmentos fusionados en un solo cuerpo, con el mapa espejado. Funcionaba, pero partía el juego en dos ideas distintas y le quitaba fuerza a la principal, que era la de estar partido. También probamos plataformas que se rompen y bloques empujables.</p>
+        <p lang="en">We got as far as prototyping a <strong>merged mode</strong>: both fragments fused into a single body, on a mirrored map. It worked, but it split the game into two different ideas and weakened the main one, which was about being split apart. We also tried breakable platforms and pushable blocks.</p>
+        <p lang="es">Sacamos todo eso. Éramos un solo programador y dos artistas, y cada sistema nuevo le quitaba tiempo a lo que de verdad hacía falta: niveles.</p>
+        <p lang="en">We cut all of it. We were one programmer and two artists, and every new system took time away from what the game actually needed: levels.</p>
+        <div class="swap"><b lang="es">más mecánicas</b><b lang="en">more mechanics</b><span class="arrow">→</span><b lang="es">cuatro verbos bien enseñados</b><b lang="en">four verbs, taught well</b></div>
+      </div>
+
+      <div class="iter">
+        <div class="n"><span lang="es">Iteración 02 — Enseñar sin palabras</span><span lang="en">Iteration 02 — Teaching without words</span></div>
+        <h3><span lang="es">Si hay que explicarlo, el nivel está mal</span><span lang="en">If it needs explaining, the level is wrong</span></h3>
+        <p lang="es">Como el juego no tiene texto, los niveles tienen que hacer todo el trabajo. Armamos el recorrido de a tres: un nivel presenta una idea donde equivocarse no cuesta nada, el siguiente la exige y el tercero la combina con otra.</p>
+        <p lang="en">Since the game has no text, the levels have to do all the work. We built the path in threes: one level introduces an idea where mistakes cost nothing, the next one demands it, and the third combines it with something else.</p>
+        <p lang="es">Para quien se traba, sumamos una ayuda que no molesta a nadie más: si pasan unos segundos sin usar una acción, aparece el dibujo de la tecla. Quien ya la sabe nunca se queda quieto lo suficiente para verlo.</p>
+        <p lang="en">For anyone who gets stuck, we added a hint that doesn't bother anyone else: if a few seconds go by without using an action, a drawing of the key shows up. Whoever already knows it never stands still long enough to see it.</p>
+        <div class="swap"><b lang="es">tutorial escrito</b><b lang="en">written tutorial</b><span class="arrow">→</span><b lang="es">niveles que enseñan solos</b><b lang="en">levels that teach on their own</b></div>
+      </div>
+
+      <div class="iter">
+        <div class="n"><span lang="es">Iteración 03 — El final</span><span lang="en">Iteration 03 — The ending</span></div>
+        <h3><span lang="es">Que el juego diga algo sin decirlo</span><span lang="en">Letting the game say something without saying it</span></h3>
+        <p lang="es">Auralis terminó siendo un juego sobre la pérdida. Con el tiempo, uno de los dos se va <strong>apagando</strong>: el que menos caminó. Lo decidís vos sin enterarte. Apagado deja de responder, y en los últimos niveles la única forma de moverlo es el switch: prestarle tu lugar.</p>
+        <p lang="en">Auralis ended up being a game about loss. Over time, one of the two starts to <strong>fade</strong>: the one that walked the least. You decide it without realizing. Once faded it stops responding, and in the last levels the only way to move it is the switch: lending it your place.</p>
+        <p lang="es">Por los niveles hay además diez pedazos de un cristal, y cada uno lo puede levantar solo uno de los dos. Juntarlos o no cambia el final, pero ninguno de los dos es "el bueno": solo cambia con qué te quedás.</p>
+        <p lang="en">The levels also hold ten pieces of a crystal, and each one can only be picked up by one of the two. Gathering them or not changes the ending, but neither is "the good one": it only changes what you're left with.</p>
+        <p lang="es">En la primera versión el final llegaba después de una unión exitosa, y el compañero simplemente desaparecía. Se sentía repentino. Lo rehicimos: en la última unión se acercan, se tocan… y no pasa nada. El nivel se apaga alrededor y queda uno solo, en el mismo lugar, con las mismas estrellas.</p>
+        <p lang="en">In the first version, the ending came right after a successful union, and the partner simply vanished. It felt abrupt. We redid it: in the last union they draw close, they touch… and nothing happens. The level fades around them and only one remains, in the same place, under the same stars.</p>
+        <div class="swap"><b lang="es">un final repentino</b><b lang="en">an abrupt ending</b><span class="arrow">→</span><b lang="es">uno que se entiende sin texto</b><b lang="en">one you understand without text</b></div>
+      </div>
+
+      <div class="iter">
+        <div class="n"><span lang="es">Iteración 04 — El ritmo</span><span lang="en">Iteration 04 — The pacing</span></div>
+        <h3><span lang="es">Mover dos cuerpos cansa</span><span lang="en">Moving two bodies is tiring</span></h3>
+        <p lang="es">Controlar a los dos a la vez exige mucha atención, y en los niveles largos se notaba enseguida. Por eso cada nivel entra en una pantalla y plantea <strong>una sola idea</strong>: el ritmo lo da entrar y salir de un problema, no aguantar uno largo. Las combinaciones más difíciles quedaron para el final, y en pocos niveles.</p>
+        <p lang="en">Controlling both at once takes a lot of focus, and long levels made that obvious right away. That's why every level fits on one screen and asks <strong>a single question</strong>: the rhythm comes from stepping in and out of problems, not from enduring a long one. The hardest combinations were saved for the end, and kept to just a few levels.</p>
+        <p lang="es">También ajustamos cómo se mueven: son espíritus, así que levitan en vez de caminar, y aterrizar se siente como un colchón y no como un golpe.</p>
+        <p lang="en">We also tuned how they move: they're spirits, so they float instead of walk, and landing feels like sinking into a cushion rather than a thud.</p>
+        <div class="swap"><b lang="es">niveles largos</b><b lang="en">long levels</b><span class="arrow">→</span><b lang="es">una idea por pantalla</b><b lang="en">one idea per screen</b></div>
+      </div>
+
+    </div>
+
+    <div class="callout" style="margin-top:30px;">
+      <p lang="es">"Siendo el único programador, el cuello de botella era yo. Me llevo cerrar los sistemas temprano y dejar el resto del tiempo para los niveles, que es donde de verdad está el juego."</p>
+      <p lang="en">"As the only programmer, I was the bottleneck. What I take away is to lock the systems early and leave the rest of the time for the levels, which is where the game really lives."</p>
+      <div class="who"><span lang="es">— Lo que me llevo para el próximo proyecto</span><span lang="en">— What I'm taking to the next project</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALERÍA ===================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <span class="section-title"><span lang="es">Galería</span><span lang="en">Gallery</span></span>
+      <span class="section-line"></span>
+    </div>
+    <div class="gallery">
+      <div class="shot"><img src="img/auralis-4.png" alt="Ipse y Alter, los dos fragmentos" class="pixel"></div>
+      <div class="shot"><img src="img/auralis-3.png" alt="Alter levitando en el vacío" class="pixel"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TECH & CRÉDITOS ===================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num">05</span>
+      <span class="section-title"><span lang="es">Tecnología y equipo</span><span lang="en">Tech and team</span></span>
+      <span class="section-line"></span>
+    </div>
+    <div class="prose" style="margin-bottom:26px;">
+      <p lang="es">Hecho en <strong>Unity 6</strong> con <strong>C#</strong> e iluminación 2D para la <strong>SANDA Game Jam 2026</strong>: cinco días de jam y después una fase competitiva de dos semanas para pulirlo. Se juega directo en el navegador.</p>
+      <p lang="en">Made in <strong>Unity 6</strong> with <strong>C#</strong> and 2D lighting for the <strong>SANDA Game Jam 2026</strong>: five days of jam, followed by a two-week competitive phase to polish it. It runs right in the browser.</p>
+      <p lang="es">A mí me tocó la idea inicial y la programación —el movimiento, las paredes de color, el switch, los finales y los efectos de luz—. Jesús hizo los personajes, los cristales, los tiles y las animaciones; Agustín, la interfaz, el menú y el audio. Los niveles los fuimos diseñando entre los tres.</p>
+      <p lang="en">I came up with the initial idea and handled the programming —movement, the colored walls, the switch, the endings and the light effects. Jesús made the characters, the crystals, the tiles and the animations; Agustín did the interface, the menu and the audio. We designed the levels together.</p>
+      <p lang="es">Música de Uppbeat (Light Prism, Jumpel x Adi Goldstein y Adi Goldstein). Los créditos completos, con todas las licencias, están en la página de itch.io.</p>
+      <p lang="en">Music from Uppbeat (Light Prism, Jumpel x Adi Goldstein and Adi Goldstein). Full credits, with every license, are on the itch.io page.</p>
+    </div>
+    <div class="pills" style="margin-bottom:34px;">
+      <span class="pill">Unity</span>
+      <span class="pill">C#</span>
+      <span class="pill"><span lang="es">Luces 2D</span><span lang="en">2D Lights</span></span>
+      <span class="pill">Pixel Art</span>
+      <span class="pill">Puzzle Design</span>
+      <span class="pill">Level Design</span>
+      <span class="pill">Game Jam</span>
+    </div>
+
+    <div class="credits">
+      <div class="credit"><div class="role"><span lang="es">Idea, Game Design + Programación</span><span lang="en">Concept, Game Design + Programming</span></div><div class="name">Bono Dipacce</div></div>
+      <div class="credit"><div class="role"><span lang="es">Arte + Diseño</span><span lang="en">Art + Design</span></div><div class="name">Jesús Cergol</div></div>
+      <div class="credit"><div class="role"><span lang="es">UI + Audio + Diseño de niveles</span><span lang="en">UI + Audio + Level Design</span></div><div class="name">Agustín Pereira</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SIGUIENTE PROYECTO ===================== -->
+<section class="section">
+  <div class="wrap">
+    <a href="proyecto-shadows.html" class="next-proj">
+      <div>
+        <div class="lbl"><span lang="es">Siguiente proyecto →</span><span lang="en">Next project →</span></div>
+        <div class="nm">Shadows: Shunned by Light</div>
+      </div>
+      <span class="btn btn-ghost"><span lang="es">Ver caso</span><span lang="en">View case</span></span>
+    </a>
+    <a href="proyectos.html" class="backlink"><span lang="es">← Volver a todos los proyectos</span><span lang="en">← Back to all projects</span></a>
+  </div>
+</section>
+
+<footer class="site-footer"><span lang="es">© 2026 Bono Dipacce — hecho con ♥ en Argentina</span><span lang="en">© 2026 Bono Dipacce — made with ♥ in Argentina</span></footer>
+
+</body>
+</html>
