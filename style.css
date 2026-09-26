@@ -6,7 +6,7 @@
   --panel: #241D16;
   --ink: #F2ECE0;
   --ink-soft: #B6AB99;
-  --ink-faint: #837868;
+  --ink-faint: #908575;  /* 4.5:1 sobre paper, card y panel (WCAG AA) */
   /* Acento primario: bermellón, más vivo sobre oscuro */
   --red: #F0553B;
   --red-deep: #D2402A;
@@ -175,7 +175,7 @@ h1.title em{
   background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.9) 1px, transparent 0);
   background-size: 12px 12px;
 }
-.card-art img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; }
+.card-art img, .card-art video{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; }
 .card-art.has-img::after{ display:none; }
 .card-chip{
   font-family: var(--font-mono); font-size:0.66rem; color:#fff;
@@ -299,13 +299,14 @@ footer.site-footer{
   display:flex; align-items:center; justify-content:center; text-align:center;
   aspect-ratio: 16 / 9; color: var(--ink-faint);
 }
-.shot img{ width:100%; height:100%; object-fit:cover; display:block; }
+.shot img, .shot video{ width:100%; height:100%; object-fit:cover; display:block; }
 .shot.empty::after{
   content: attr(data-label); font-family: var(--font-mono); font-size:0.78rem;
   padding: 0 20px; opacity: 0.8; white-space:pre-line;
 }
 .shot.empty{ border-style: dashed; border-color: var(--line-strong); }
 .proj-cover{ margin-top: 40px; aspect-ratio: 21 / 9; }
+.proj-cover.is-video{ aspect-ratio: 16 / 9; }
 
 /* Bloques de contenido */
 .prose{ max-width: 66ch; }

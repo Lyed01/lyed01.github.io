@@ -31,6 +31,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="lang.js"></script>
+<script src="site.js" defer></script>
 </head>
 <body>
 
@@ -73,7 +74,7 @@
 
 <!-- Portada grande -->
 <div class="wrap">
-  <div class="shot proj-cover"><img src="img/auralis-cover.png" alt="Portada de Auralis: Ipse y Alter junto al cristal" class="pixel"></div>
+  <div class="shot proj-cover is-video"><video autoplay muted loop playsinline preload="metadata" poster="img/auralis-hero-poster.jpg" aria-label="Gameplay de Auralis: Ipse y Alter en un nivel con paredes de los dos colores"><source src="img/auralis-hero.mp4" type="video/mp4"></video></div>
 </div>
 
 <!-- ===================== CONCEPTO ===================== -->
@@ -140,7 +141,7 @@
         <p lang="en">The answer was <strong>colored walls</strong>: blocks that are solid for one and thin air for the other. One lands where the other falls through; one gets stuck while the other keeps going. Later on, inverted gravity for just one of them and mirrored movement join in. To make it readable at a glance, the same fact is said three times: through color, through shape, and through a flash on impact.</p>
       </div>
       <div class="feature-media">
-        <div class="shot"><img src="img/auralis-1.png" alt="Ipse y Alter separados por paredes de color" class="pixel"></div>
+        <div class="shot"><video autoplay muted loop playsinline preload="metadata" poster="img/auralis-walls-poster.jpg" aria-label="Los fragmentos nacen de sus cristales, las paredes de color los separan y se unen"><source src="img/auralis-walls.mp4" type="video/mp4"></video></div>
       </div>
     </div>
 
@@ -154,7 +155,7 @@
         <p lang="en">The swap carries their momentum too, so a fragment in free fall lends that fall to the other one. And it can't be used while either of them is passing through a wall: where you trigger it from becomes part of the plan.</p>
       </div>
       <div class="feature-media">
-        <div class="shot"><img src="img/auralis-2.png" alt="El destello del switch al intercambiar a los fragmentos" class="pixel"></div>
+        <div class="shot"><video autoplay muted loop playsinline preload="metadata" poster="img/auralis-switch-poster.jpg" aria-label="Los fragmentos intercambian de lugar con el switch"><source src="img/auralis-switch.mp4" type="video/mp4"></video></div>
       </div>
     </div>
   </div>
@@ -236,8 +237,10 @@
       <span class="section-line"></span>
     </div>
     <div class="gallery">
-      <div class="shot"><img src="img/auralis-4.png" alt="Ipse y Alter, los dos fragmentos" class="pixel"></div>
-      <div class="shot"><img src="img/auralis-3.png" alt="Alter levitando en el vacío" class="pixel"></div>
+      <div class="shot"><img src="img/auralis-4.png" alt="Ipse y Alter, los dos fragmentos" class="pixel" width="1600" height="900" loading="lazy" decoding="async"></div>
+      <div class="shot"><img src="img/auralis-3.png" alt="Alter levitando en el vacío" class="pixel" width="1524" height="832" loading="lazy" decoding="async"></div>
+      <div class="shot"><img src="img/auralis-1.png" alt="Ipse y Alter separados por paredes de color" class="pixel" width="1529" height="877" loading="lazy" decoding="async"></div>
+      <div class="shot"><img src="img/auralis-2.png" alt="El destello del switch al intercambiar a los fragmentos" class="pixel" width="1538" height="865" loading="lazy" decoding="async"></div>
     </div>
   </div>
 </section>
